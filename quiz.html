@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <title>القرآن الكريم | اختبارات دينية </title>
+    <link rel="shortcut icon" type="image/x-icon" href="./photo/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://kit.fontawesome.com/2b6685be60.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lateef&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mirza&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    /* General : */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    @media(min-width:0px) and (max-width:315px) {
+        .test {
+            color: palevioletred;
+        }
+
+        /* header */
+        .navbar-brand {
+            font-size: 20px !important;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+        .navbar a {
+            margin-right: 5% !important;
+        }
+
+
+
+        /* Homepage container : */
+
+        .mostread {
+            font-size: 20px !important;
+        }
+
+        .info {
+            justify-content: center !important;
+            flex-direction: column !important;
+        }
+
+        .info-text {
+            margin-top: 15% !important;
+        }
+
+
+
+
+    }
+
+    .test {
+        color: blue;
+    }
+
+
+    @media(min-width:0px) and (max-width:766px) {
+        .test {
+            color: red;
+        }
+
+        /* header */
+
+        .navbar-brand svg {
+            margin-left: 5% !important;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+
+        /* Homepage container : */
+
+        .smaller {
+            font-size: 20px !important;
+        }
+
+    }
+
+
+    @media(max-width:500px) {
+        .test {
+            color: yellow;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+        /* Homepage container : */
+
+
+    }
+
+
+    @media(min-width:501px) and (max-width:767px) {
+        .test {
+            color: blue;
+        }
+
+
+        /* header */
+
+        .navbar-brand {
+            margin-right: 0 !important;
+        }
+
+        .navbar-nav {
+            margin-top: 5%;
+        }
+
+        .navbar img {
+            margin-top: 0 auto !important;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+
+    }
+
+
+    @media(min-width:768px) and (max-width:991px) {
+        .test {
+            color: yellow;
+        }
+
+
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20%;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+
+        /* Homepage Conrtainer : */
+
+
+
+    }
+
+
+    @media(min-width:992px) and (max-width:1199px) {
+        .test {
+            color: green;
+        }
+
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20% !important;
+        }
+
+
+
+        /* Homepage Conrtainer : */
+
+
+
+    }
+
+
+    @media(min-width:1200px) {
+        .test {
+            color: red;
+        }
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20% !important;
+        }
+
+        /* Homepage Conrtainer : */
+
+
+
+
+
+    }
+
+    .navbar a {
+        margin-right: 5% !important;
+    }
+
+    .nav-item {
+        margin-top: 1.5%;
+        margin-right: 3%;
+    }
+
+    .nav-item {
+        margin-right: 8%;
+        transition: 0.5s;
+    }
+
+
+    .navbar a:hover {
+        color: orange !important;
+        transition: 0.8s;
+
+    }
+
+    .h:hover {
+        font-weight: bold;
+        transition: 0.75s;
+        color: orange;
+        transform: scale(1.1);
+
+    }
+
+    .footer-icon:hover {
+        color: orange;
+        transform: scale(2);
+        transition: 0.5s;
+    }
+
+
+</style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+
+
+    <nav class="navbar navbar-expand-md mb-5 text-danger bg-info">
+        <button style="background:transparent;" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <i class="fa-solid fa-bars text-white computer"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+
+
+                <li class="nav-item" style="font-size: 20px; font-family:mirza;">
+                    <b><a class="nav-link  text-white" href="contact.html" style="font-size: 20px;"
+                            style="font-family:Mirza;">تواصل</a></b>
+
+                </li>
+
+
+                <li class="nav-item dropdown" style="font-size: 20px; font-family:mirza;">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                        خدماتنا
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item p-3 mr-4 text-right" href="quran.html" style="font-family:Mirza;"><i
+                                class="fa-solid fa-volume-high mr-2 mt-2 float-left"></i>القران الكريم مسموع</a>
+                        <a class="dropdown-item p-3 mr-4  text-right" href="#" style="font-family:Amiri;"><i
+                                class="fas fa-quran mr-2 float-left"></i>تفسير القرآن</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="#" style="font-family:Amiri;"><i
+                                class="fa-solid fa-mosque float-left"></i> اختبارات دينية</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="lesson.html" style="font-family:Amiri;"><i
+                                class="fa-solid fa-book float-left"></i> محاضرات دينية</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="sbha.html" style="font-family:Amiri;"><i
+                                class="fa-solid fa-rotate float-left"></i> خاتم تسبيح</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item" style="font-size: 20px; font-family:mirza;">
+                    <b><a class="nav-link text-white" href="index.html" style="font-size: 20px;"
+                            style="font-family:Mirza;">الرئيسية</a></b>
+
+                </li>
+
+
+
+
+
+            </ul>
+        </div>
+        <a class="navbar-brand text-white font-weight-bold" href="#" style="font-size:30px;">
+            <img src="./photo/logo.jpg">
+        </a>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="h3 text-right mt-5 mb-4 mr-3 border-bottom w-auto mostread" style="font-family:Amiri,cursive;">
+            اِخْتِبَارَات دِينِيَّةٍ
+        </div>
+
+
+
+        <div class="container">
+            <div class="row">
+
+
+
+                <div class=" text-center col-12" style="width:100%; ">
+
+                    <div class="dropdown text-center" style="width:100%;">
+                        <button type="button"
+                            style="width:80%; border:1px orange solid; background:transparent; color:orange; border-radius:9px;"
+                            class=" dropdown-toggle p-2" data-toggle="dropdown">
+                            اختر الاختبار
+                        </button>
+                        <div class="dropdown-menu text-center" style="border-radius:10px; width:80%;">
+                            <button class="dropdown-item h p-3" onclick="quiZZ1()">اِخْتِبَارٌ إِسْلَامِيٌّ
+                                مُتَنَوِّعٌ</button>
+                            <button class="dropdown-item h p-3" onclick="quiZZ2()">اِخْتِبَارٌ إِسْلَامِيٌّ مُتَنَوِّعٌ
+                                2</button>
+                            <button class="dropdown-item h p-3" onclick="quiZZ3()">اِخْتِبَارٌ إِسْلَامِيٌّ مُتَنَوِّعٌ
+                                3</button>
+                            <div class="dropdown-divider"></div>
+                            <button class="dropdown-item h p-3" onclick="quiZZ4()">اَلْجَنَّة وَالنَّارِ</button>
+                            <button class="dropdown-item h p-3" onclick="quiZZ5()">الجزء الثاني -اَلْجَنَّة
+                                وَالنَّارِ</button>
+                            <button class="dropdown-item h p-3" onclick="quiZZ6()">الجزء الثاني -اَلْجَنَّة
+                                وَالنَّارِ</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class=" row">
+
+            <div class="col-1"></div>
+            <div class="quiZ1 col-9 mx-auto text-center p-3 pt-4 mt-4 d-none" id="quiZ1"
+                style="background:rgb(249, 238, 174); border-radius: 10px; margin-left:5%; margin-right:5%;">
+
+                <p class="h3 text-right smaller" style="font-family:Lalezar;">اِخْتِبَارٌ إِسْلَامِيٌّ مُتَنَوِّعٌ</p>
+                <div class="">
+                    <hr style="width:90%;" class="float-right"><br><br>
+                </div>
+
+
+                <div class="row mb-4 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                    <p class="col-12 text-right mx-auto h4" style="font-family:lateef;" id="m1-q1">
+                        ما عدد أركان الاسلام؟
+                    </p>
+
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+                        <label for="q1-1">5</label>
+                        <input type="radio" id="q1-1" name="q1" value="5">
+                        <br>
+                        <label for="q1-2">4</label>
+                        <input type="radio" id="q1-2" name="q1" value="5">
+                        <br>
+
+                        <label for="q1-3">3</label>
+                        <input type="radio" id="q1-3" name="q1" value="3">
+                        <br>
+
+                        <label for="q1-4">7</label>
+                        <input type="radio" id="q1-4" name="q1" value="7">
+                        <br>
+
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-mosque mb-5"></i>
+
+                <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;" id="m1-q2">
+                        ما العهد الذي إذا تم تركه كفر العبد ؟
+                    </p>
+
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                        <label for="q2-1">صلاة</label>
+                        <input type="radio" id="q2-1" name="q2" value="صلاة">
+                        <br>
+                        <label for="q2-2">زكاة</label>
+                        <input type="radio" id="q2-2" name="q2" value="زكاة">
+                        <br>
+
+                        <label for="q2-3">حج البيت</label>
+                        <input type="radio" id="q2-3" name="q2" value="حج البيت">
+                        <br>
+
+                        <label for="q2-4">بر الوالدين</label>
+                        <input type="radio" id="q2-4" name="q2" value="بر الوالدين" form="form">
+                        <br>
+
+                    </p>
+
+                </div>
+
+
+                <i class="fa-solid fa-mosque mb-5"></i>
+
+                <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;" id="m1-q3">
+                        ما اسم خازن الجنة ؟
+                    </p>
+
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                        <label for="q3-1">lمنكر</label>
+                        <input type="radio" id="q3-1" name="q3" value="صلاة">
+                        <br>
+                        <label for="q3-2">مالك</label>
+                        <input type="radio" id="q3-2" name="q3" value="زكاة">
+                        <br>
+
+                        <label for="q3-3">نكير</label>
+                        <input type="radio" id="q3-3" name="q3" value="حج البيت">
+                        <br>
+
+                        <label for="q3-4">رضوان</label>
+                        <input type="radio" id="q3-4" name="q3" value="بر الوالدين" form="form">
+                        <br>
+
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-mosque mb-5"></i>
+
+                <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;" id="m1-q4">
+                        من هو إمام القراْ
+                    </p>
+
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                        <label for="q4-1">أبو بكر الصديق</label>
+                        <input type="radio" id="q4-1" name="q4" value="صلاة">
+                        <br>
+                        <label for="q4-2">أبو هريرة</label>
+                        <input type="radio" id="q4-2" name="q4" value="زكاة">
+                        <br>
+
+                        <label for="q4-3">معاذ بن جبل</label>
+                        <input type="radio" id="q4-3" name="q4" value="حج البيت">
+                        <br>
+
+                        <label for="q4-4">ليس مما سبق</label>
+                        <input type="radio" id="q4-4" name="q4" value="بر الوالدين" form="form">
+                        <br>
+
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-mosque mb-5"></i>
+
+                <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;" id="m1-q5">
+                        أين تم دفن هود ؟
+                    </p>
+
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                        <label for="q5-1">مصر</label>
+                        <input type="radio" id="q5-1" value="صلاة">
+                        <br>
+                        <label for="q5-2">باب لحم</label>
+                        <input type="radio" id="q5-2" value="زكاة">
+                        <br>
+
+                        <label for="q5-3">حضرموت</label>
+                        <input type="radio" id="q5-3" value="حج البيت">
+                        <br>
+
+                        <label for="q5-4">طرابلس</label>
+                        <input type="radio" id="q5-4" value="بر الوالدين" form="form">
+                        <br>
+
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-mosque mb-5"></i>
+
+                <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;" id="m1-q6">
+                        ما هو الحج الأصغر ؟
+                    </p>
+
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                        <label for="q6-1">صلاة</label>
+                        <input type="radio" id="q6-1" value="صلاة">
+                        <br>
+                        <label for="q6-2">عمرة</label>
+                        <input type="radio" id="q6-2" value="زكاة">
+                        <br>
+
+                        <label for="q6-3">لا بوجد ذلك المسمى</label>
+                        <input type="radio" id="q6-3" value="حج البيت">
+                        <br>
+
+                        <label for="q6-4">ليس مما سبق</label>
+                        <input type="radio" id="q6-4" value="بر الوالدين" form="form">
+                        <br>
+
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-mosque mb-5"></i>
+
+                <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;" id="m1-q7">
+                        من هم المغضوب عليهم هند الله ؟
+                    </p>
+
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                        <label for="q7-1">اليهود
+                        </label>
+                        <input type="radio" id="q7-1" value="صلاة">
+                        <br>
+                        <label for="q7-2">عباد البقر</label>
+                        <input type="radio" id="q7-2" value="زكاة">
+                        <br>
+
+                        <label for="q7-3">عباد الأصنام</label>
+                        <input type="radio" id="q7-3" value="حج البيت">
+                        <br>
+
+                        <label for="q7-4">النصارى</label>
+                        <input type="radio" id="q7-4" value="بر الوالدين" form="form">
+                        <br>
+
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-mosque mb-5"></i>
+
+                <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;" id="m1-q8">
+                        ما هي الحطمة ؟
+                    </p>
+
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                        <label for="q8-1">النار</label>
+                        <input type="radio" id="q8-1" value="صلاة">
+                        <br>
+                        <label for="q8-2">الجنة</label>
+                        <input type="radio" id="q8-2" value="زكاة">
+                        <br>
+
+                        <label for="q8-3">الصراط</label>
+                        <input type="radio" id="q8-3" value="حج البيت">
+                        <br>
+
+                        <label for="q8-4">القبر</label>
+                        <input type="radio" id="q8-4" value="بر الوالدين" form="form">
+                        <br>
+
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-mosque mb-5"></i>
+
+                <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;" id="m1-q9">
+                        الحشرة التي تكلمت :
+                    </p>
+
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                        <label for="q9-1">نحلة</label>
+                        <input type="radio" id="q9-1" value="صلاة">
+                        <br>
+                        <label for="q9-2">بعوضة</label>
+                        <input type="radio" id="q9-2" value="زكاة">
+                        <br>
+
+                        <label for="q9-3">قمل</label>
+                        <input type="radio" id="q9-3" value="حج البيت">
+                        <br>
+
+                        <label for="q9-4">نمل</label>
+                        <input type="radio" id="q9-4" value="بر الوالدين" form="form">
+                        <br>
+
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-mosque mb-5"></i>
+
+                <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;" id="m1-q10">
+                        كم عدد مراتب الدين ؟
+                    </p>
+
+                    <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                        <label for="q2-1">2</label>
+                        <input type="radio" id="q10-1" value="صلاة">
+                        <br>
+                        <label for="q2-2">6</label>
+                        <input type="radio" id="q10-2" value="زكاة">
+                        <br>
+
+                        <label for="q2-3">3</label>
+                        <input type="radio" id="q10-3" value="حج البيت">
+                        <br>
+
+                        <label for="q2-4">1</label>
+                        <input type="radio" id="q10-4" value="بر الوالدين" form="form">
+                        <br>
+
+                    </p>
+
+                </div>
+
+
+
+
+                <button onclick="how()" class="btn btn-info" id="send">الانتهاء من الاختبار</button>
+
+                <div id="result"></div>
+
+
+            </div>
+
+            <div class="col-1"></div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="col-1"></div>
+        <div class="quiZ2 col-9 mx-auto text-center p-3 pt-4 mt-4 d-none" id="quiZ2"
+            style="background:rgb(210, 169, 175); border-radius: 10px; margin-left:5%; margin-right:5%;">
+
+            <p class="h3 text-right smaller" style="font-family:Lalezar;">الجزء الثاني -اِخْتِبَارٌ إِسْلَامِيٌّ
+                مُتَنَوِّعٌ</p>
+            <div class="">
+                <hr style="width:90%;" class="float-right"><br><br>
+            </div>
+
+
+            <div class="row mb-4 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+                    ما عدد أركان الاسلام؟
+                </p>
+
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+                    <label for="q1-1">5</label>
+                    <input type="radio" id="q1-1" name="q1" value="5">
+                    <br>
+                    <label for="q1-2">4</label>
+                    <input type="radio" id="q1-2" name="q1" value="5">
+                    <br>
+
+                    <label for="q1-3">3</label>
+                    <input type="radio" id="q1-3" name="q1" value="3">
+                    <br>
+
+                    <label for="q1-4">7</label>
+                    <input type="radio" id="q1-4" name="q1" value="7">
+                    <br>
+
+                </p>
+
+            </div>
+
+            <i class="fa-solid fa-mosque mb-5"></i>
+
+            <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+                    ما العهد الذي إذا تم تركه كفر العبد ؟
+                </p>
+
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                    <label for="q2-1">صلاة</label>
+                    <input type="radio" id="q2-1" name="q2" value="صلاة">
+                    <br>
+                    <label for="q2-2">زكاة</label>
+                    <input type="radio" id="q2-2" name="q2" value="زكاة">
+                    <br>
+
+                    <label for="q2-3">حج البيت</label>
+                    <input type="radio" id="q2-3" name="q2" value="حج البيت">
+                    <br>
+
+                    <label for="q2-4">بر الوالدين</label>
+                    <input type="radio" id="q2-4" name="q2" value="بر الوالدين" form="form">
+                    <br>
+
+                </p>
+
+            </div>
+
+
+            <i class="fa-solid fa-mosque mb-5"></i>
+
+            <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+                    ما اسم خازن الجنة ؟
+                </p>
+
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                    <label for="q3-1">lمنكر</label>
+                    <input type="radio" id="q3-1" name="q3" value="صلاة">
+                    <br>
+                    <label for="q3-2">مالك</label>
+                    <input type="radio" id="q3-2" name="q3" value="زكاة">
+                    <br>
+
+                    <label for="q3-3">نكير</label>
+                    <input type="radio" id="q3-3" name="q3" value="حج البيت">
+                    <br>
+
+                    <label for="q3-4">رضوان</label>
+                    <input type="radio" id="q3-4" name="q3" value="بر الوالدين" form="form">
+                    <br>
+
+                </p>
+
+            </div>
+
+            <i class="fa-solid fa-mosque mb-5"></i>
+
+            <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+                    من هو إمام القراْ
+                </p>
+
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                    <label for="q4-1">أبو بكر الصديق</label>
+                    <input type="radio" id="q4-1" name="q4" value="صلاة">
+                    <br>
+                    <label for="q4-2">أبو هريرة</label>
+                    <input type="radio" id="q4-2" name="q4" value="زكاة">
+                    <br>
+
+                    <label for="q4-3">معاذ بن جبل</label>
+                    <input type="radio" id="q4-3" name="q4" value="حج البيت">
+                    <br>
+
+                    <label for="q4-4">ليس مما سبق</label>
+                    <input type="radio" id="q4-4" name="q4" value="بر الوالدين" form="form">
+                    <br>
+
+                </p>
+
+            </div>
+
+            <i class="fa-solid fa-mosque mb-5"></i>
+
+            <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+                    أين تم دفن هود ؟
+                </p>
+
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                    <label for="q5-1">مصر</label>
+                    <input type="radio" id="q5-1" value="صلاة">
+                    <br>
+                    <label for="q5-2">باب لحم</label>
+                    <input type="radio" id="q5-2" value="زكاة">
+                    <br>
+
+                    <label for="q5-3">حضرموت</label>
+                    <input type="radio" id="q5-3" value="حج البيت">
+                    <br>
+
+                    <label for="q5-4">طرابلس</label>
+                    <input type="radio" id="q5-4" value="بر الوالدين" form="form">
+                    <br>
+
+                </p>
+
+            </div>
+
+            <i class="fa-solid fa-mosque mb-5"></i>
+
+            <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+                    ما هو الحج الأصغر ؟
+                </p>
+
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                    <label for="q6-1">صلاة</label>
+                    <input type="radio" id="q6-1" value="صلاة">
+                    <br>
+                    <label for="q6-2">عمرة</label>
+                    <input type="radio" id="q6-2" value="زكاة">
+                    <br>
+
+                    <label for="q6-3">لا بوجد ذلك المسمى</label>
+                    <input type="radio" id="q6-3" value="حج البيت">
+                    <br>
+
+                    <label for="q6-4">ليس مما سبق</label>
+                    <input type="radio" id="q6-4" value="بر الوالدين" form="form">
+                    <br>
+
+                </p>
+
+            </div>
+
+            <i class="fa-solid fa-mosque mb-5"></i>
+
+            <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+                    من هم المغضوب عليهم هند الله ؟
+                </p>
+
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                    <label for="q7-1">اليهود
+                    </label>
+                    <input type="radio" id="q7-1" value="صلاة">
+                    <br>
+                    <label for="q7-2">عباد البقر</label>
+                    <input type="radio" id="q7-2" value="زكاة">
+                    <br>
+
+                    <label for="q7-3">عباد الأصنام</label>
+                    <input type="radio" id="q7-3" value="حج البيت">
+                    <br>
+
+                    <label for="q7-4">النصارى</label>
+                    <input type="radio" id="q7-4" value="بر الوالدين" form="form">
+                    <br>
+
+                </p>
+
+            </div>
+
+            <i class="fa-solid fa-mosque mb-5"></i>
+
+            <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+                    ما هي الحطمة ؟
+                </p>
+
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                    <label for="q8-1">النار</label>
+                    <input type="radio" id="q8-1" value="صلاة">
+                    <br>
+                    <label for="q8-2">الجنة</label>
+                    <input type="radio" id="q8-2" value="زكاة">
+                    <br>
+
+                    <label for="q8-3">الصراط</label>
+                    <input type="radio" id="q8-3" value="حج البيت">
+                    <br>
+
+                    <label for="q8-4">القبر</label>
+                    <input type="radio" id="q8-4" value="بر الوالدين" form="form">
+                    <br>
+
+                </p>
+
+            </div>
+
+            <i class="fa-solid fa-mosque mb-5"></i>
+
+            <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+                    الحشرة التي تكلمت :
+                </p>
+
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                    <label for="q9-1">نحلة</label>
+                    <input type="radio" id="q9-1" value="صلاة">
+                    <br>
+                    <label for="q9-2">بعوضة</label>
+                    <input type="radio" id="q9-2" value="زكاة">
+                    <br>
+
+                    <label for="q9-3">قمل</label>
+                    <input type="radio" id="q9-3" value="حج البيت">
+                    <br>
+
+                    <label for="q9-4">نمل</label>
+                    <input type="radio" id="q9-4" value="بر الوالدين" form="form">
+                    <br>
+
+                </p>
+
+            </div>
+
+            <i class="fa-solid fa-mosque mb-5"></i>
+
+            <div class="row mb-5 mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 ">
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+                    كم عدد مراتب الدين ؟
+                </p>
+
+                <p class="col-12 text-right mx-auto h4 " style="font-family:lateef;">
+
+
+                    <label for="q2-1">2</label>
+                    <input type="radio" id="q10-1" " value=" صلاة">
+                    <br>
+                    <label for="q2-2">6</label>
+                    <input type="radio" id="q10-2" value="زكاة">
+                    <br>
+
+                    <label for="q2-3">3</label>
+                    <input type="radio" id="q10-3" value="حج البيت">
+                    <br>
+
+                    <label for="q2-4">1</label>
+                    <input type="radio" id="q10-4" value="بر الوالدين" form="form">
+                    <br>
+
+                </p>
+
+            </div>
+
+
+
+
+            <button onclick="how()" class="btn btn-info" id="send">الانتهاء من الاختبار</button>
+
+            <div id="result"></div>
+
+
+        </div>
+
+        <div class="col-1"></div>
+
+    </div>
+
+
+
+
+    <footer style="display:flex; flex-direction:column; align-items:center;" class="bg-info mt-5">
+
+        <div class="text-white h6 mt-3" style="font-family:amiri;">.. تم برمجة الموقع صدقة لوجه الله تعالى الرجاء الدعاء
+            للمسلمين جميعًا </div>
+        <div class="text-white h5 mt-3 ml-2" style="font-family:amiri;">
+
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-facebook  mr-3"></i></a>|
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-whatsapp mr-3 ml-3"></i></a>|
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-instagram mr-3 ml-3"></i></a>|
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-twitter mr-3 ml-3"></i></a>
+
+        </div>
+
+        <div class="text-white h6 mt-3" style="font-family:amiri;">
+            .
+            (<a href="https://wa.me/message/IG5E4ICWRMZYD1" class="text-white"><i class="fa-solid fa-phone"></i></a>)
+
+            بواسطة : أَحْمَدْ خَالِدْ اَلدَّاخِلِيِّ
+        </div>
+        <div class="text-white h6 mt-3 mb-3" style="font-family:amiri;">جميع الحقوق محفوظة لإدارة الموقع &copy; 2022
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

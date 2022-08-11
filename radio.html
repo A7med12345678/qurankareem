@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <title>القرآن الكريم | إِذَاعَات اَلْقُرْآنِ اَلْكَرِيم </title>
+    <link rel="shortcut icon" type="image/x-icon" href="./photo/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://kit.fontawesome.com/2b6685be60.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lateef&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mirza&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    /* General : */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    @media(min-width:0px) and (max-width:315px) {
+        .test {
+            color: palevioletred;
+        }
+
+        /* header */
+        .navbar-brand {
+            font-size: 20px !important;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+        .navbar a {
+            margin-right: 5% !important;
+        }
+
+
+
+        /* Homepage container : */
+
+        .mostread {
+            font-size: 20px !important;
+        }
+
+        .info {
+            justify-content: center !important;
+            flex-direction: column !important;
+        }
+
+        .info-text {
+            margin-top: 15% !important;
+        }
+
+        .left {
+            margin-left: 10% !important;
+        }
+
+        .quran-smaller{
+            font-size: 18px !important;
+        }
+
+
+    }
+
+    .test {
+        color: blue;
+    }
+
+
+    @media(min-width:0px) and (max-width:766px) {
+        .test {
+            color: red;
+        }
+
+        /* header */
+
+        .navbar-brand svg {
+            margin-left: 5% !important;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+
+        /* Homepage container : */
+
+        .smaller {
+            font-size: 20px !important;
+        }
+
+        .icon {
+            margin-top: 8% !important;
+        }
+
+    }
+
+
+    @media(max-width:500px) {
+        .test {
+            color: yellow;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+        /* Homepage container : */
+
+        .contact {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+
+        }
+
+    }
+
+
+    @media(min-width:501px) and (max-width:767px) {
+        .test {
+            color: blue;
+        }
+
+
+        /* header */
+
+        .navbar-brand {
+            margin-right: 0 !important;
+        }
+
+        .navbar-nav {
+            margin-top: 5%;
+        }
+
+        .navbar img {
+            margin-top: 0 auto !important;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+
+    }
+
+
+    @media(min-width:768px) and (max-width:991px) {
+        .test {
+            color: yellow;
+        }
+
+
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20%;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+
+        /* Homepage Conrtainer : */
+
+
+
+    }
+
+
+    @media(min-width:992px) and (max-width:1199px) {
+        .test {
+            color: green;
+        }
+
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20% !important;
+        }
+
+
+
+        /* Homepage Conrtainer : */
+
+
+
+    }
+
+
+    @media(min-width:1200px) {
+        .test {
+            color: red;
+        }
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20% !important;
+        }
+
+        /* Homepage Conrtainer : */
+
+
+
+
+
+    }
+
+    .navbar a {
+        margin-right: 5% !important;
+    }
+
+    .nav-item {
+        margin-top: 1.5%;
+        margin-right: 3%;
+    }
+
+    .nav-item {
+        margin-right: 8%;
+        transition: 0.5s;
+    }
+
+
+    .navbar a:hover {
+        color: orange !important;
+        transition: 0.8s;
+
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+
+    @keyframes blink-caret {
+
+        from,
+        to {
+            border-color: blue;
+        }
+    }
+
+    .all-contact {
+        display: inline-block;
+    }
+
+    .radio {
+        font-family: lateef;
+        border: 2px orange solid;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .radio .img {
+        opacity: 0.9;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    .footer-icon:hover {
+        color: orange;
+        transform: scale(2);
+        transition: 0.5s;
+    }
+
+    
+    .footer-icon:hover {
+        color: orange;
+        transform: scale(2);
+        transition: 0.5s;
+    }
+
+</style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+
+
+    <nav class="navbar navbar-expand-md mb-5 text-danger bg-info">
+        <button style="background:transparent;" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <i class="fa-solid fa-bars text-white computer"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+
+
+                <li class="nav-item" style="font-size: 20px; font-family:mirza;">
+                    <b><a class="nav-link  text-white" href="contact.html" style="font-size: 20px;"
+                            style="font-family:Mirza;">تواصل</a></b>
+
+                </li>
+
+
+                <li class="nav-item dropdown" style="font-size: 20px; font-family:mirza;">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                        خدماتنا
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item p-3 mr-4 text-right" href="quran.html" style="font-family:Mirza;"><i
+                                class="fa-solid fa-volume-high mr-2 mt-2 float-left"></i>القران الكريم مسموع</a>
+                        <a class="dropdown-item p-3 mr-4  text-right" href="#" style="font-family:Amiri;"><i
+                                class="fas fa-quran mr-2 float-left"></i>تفسير القرآن</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="#" style="font-family:Amiri;"><i
+                                class="fa-solid fa-mosque float-left"></i> اختبارات دينية</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="lesson.html" style="font-family:Amiri;"><i
+                                class="fa-solid fa-book float-left"></i> محاضرات دينية</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="sbha.html" style="font-family:Amiri;"><i
+                                class="fa-solid fa-rotate float-left"></i> خاتم تسبيح</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item" style="font-size: 20px; font-family:mirza;">
+                    <b><a class="nav-link text-white" href="index.html" style="font-size: 20px;"
+                            style="font-family:Mirza;">الرئيسية</a></b>
+
+                </li>
+
+
+
+
+
+            </ul>
+        </div>
+        <a class="navbar-brand text-white font-weight-bold" href="#" style="font-size:30px;">
+            <img src="./photo/logo.jpg">
+        </a>
+
+    </nav>
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="h3 text-right mt-5 mb-4 mr-3 border-bottom w-auto mostread" style="font-family:Amiri,cursive;">
+            إِذَاعَات اَلْقُرْآنِ اَلْكَرِيمِ
+        </div>
+
+
+
+
+        <div class="row" style="display:flex; flex-direction:column;">
+
+
+
+
+            <div class="container">
+                <div class="h4 text-right mt-5 mb-4 mr-3 border-bottom w-auto quran-smaller" style="font-family:Amiri,cursive;">
+                    إِذَاعَات عربية
+                </div>
+        
+
+
+            <div class="radio mx-auto p-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-10 row"
+                style="display:flex; flex-direction:column; align-items: center;">
+
+                <div class="img">
+                    <img src="./photo/radio-back3.jpeg">
+                </div>
+
+                <div class=" text-right pb-2 font-weight-bold" style="border-bottom:1px orange solid;">
+                    إذاعة القران
+                    الكريم- نابلس (فلسطين)</div>
+
+
+                <div class="mt-3">
+                    <audio controls style="max-width:100%; max-height:100%; margin:auto; object-fit:contain;">
+                        <source src="http://www.quran-radio.org:8080/;stream.mp3" type="audio/mp3" download>
+                        عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                        .
+                    </audio>
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <div class="radio mx-auto p-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-10 mt-3 row"
+                style="display:flex; flex-direction:column; align-items: center;">
+
+                <div class="img">
+                    <img src="./photo/radio-back2.webp">
+                </div>
+
+                <div class="h4 text-right pb-2 font-weight-bold" style="border-bottom:1px orange solid; ;">
+                    إذاعة القران
+                    الكريم- القاهرة</div>
+
+
+                <div class="mt-3">
+                    <audio controls style="max-width:100%; max-height:100%; margin:auto; object-fit:contain;">
+                        <source src="https://stream.radiojar.com/8s5u5tpdtwzuv" type="audio/mp3" download>
+                        عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                        .
+                    </audio>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="radio mx-auto p-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-10 mt-3 row"
+                style="display:flex; flex-direction:column; align-items: center;">
+
+                <div class="img">
+                    <img src="./photo/radio-back.webp">
+                </div>
+
+                <div class="h4 text-right pb-2 font-weight-bold" style="border-bottom:1px orange solid; ;">
+                    إذاعة القران
+                    الكريم- السعودية</div>
+
+
+                <div class="mt-3">
+                    <audio controls style="max-width:100%; max-height:100%; margin:auto; object-fit:contain;">
+                        <source src="https://stream.radiojar.com/4wqre23fytzuv" type="audio/mp3" download>
+                        عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                        .
+                    </audio>
+                </div>
+
+            </div>
+
+
+
+            
+            <div class="radio mx-auto p-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-10 mt-3 row"
+                style="display:flex; flex-direction:column; align-items: center;">
+
+                <div class="img">
+                    <img src="./photo/radio-back4.jpeg">
+                </div>
+
+                <div class="h4 text-right pb-2 font-weight-bold" style="border-bottom:1px orange solid; ;">
+                    إذاعة القران
+                    الكريم- الجزاير</div>
+
+
+                <div class="mt-3">
+                    <audio controls style="max-width:100%; max-height:100%; margin:auto; object-fit:contain;">
+                        <source src="https://webradio.tda.dz/Coran_64K.mp3" type="audio/mp3" download>
+                        عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                        .
+                    </audio>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="radio mx-auto p-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-10 mt-3 row"
+                style="display:flex; flex-direction:column; align-items: center;">
+
+                <div class="img">
+                    <img src="./photo/radio-back5.jpeg">
+                </div>
+
+                <div class="h4 text-right pb-2 font-weight-bold" style="border-bottom:1px orange solid; ;">
+                    إذاعة القران
+                    الكريم- الإمارات</div>
+
+
+                <div class="mt-3">
+                    <audio controls style="max-width:100%; max-height:100%; margin:auto; object-fit:contain;">
+                        <source src="https://zayedquran.gov.ae/stream.php" type="audio/mp3" download>
+                        عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                        .
+                    </audio>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="radio mx-auto p-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-10 mt-3 row"
+                style="display:flex; flex-direction:column; align-items: center;">
+
+                <div class="img">
+                    <img src="./photo/radio-back7.jpeg">
+                </div>
+
+                <div class="h4 text-right pb-2 font-weight-bold" style="border-bottom:1px orange solid; ;">
+                    إذاعة القران
+                    الكريم- نور على نور</div>
+
+
+                <div class="mt-3">
+                    <audio controls style="max-width:100%; max-height:100%; margin:auto; object-fit:contain;">
+                        <source src="https://edge.mixlr.com/channel/eterm" type="audio/mp3" download>
+                        عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                        .
+                    </audio>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="container">
+                <div class="h5 text-right mt-5 mb-4 mr-3 border-bottom w-auto quran-smaller" style="font-family:Amiri,cursive;">
+                    إِذَاعَات أجنبية
+                </div>
+
+
+
+            <div class="radio mx-auto p-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-10 mt-3 row"
+                style="display:flex; flex-direction:column; align-items: center;">
+
+                <div class="img">
+                    <img src="./photo/radio-back6.webp">
+                </div>
+
+                <div class="h4 text-right pb-2 font-weight-bold" style="border-bottom:1px orange solid; ;">
+                    إذاعة القران
+                    الكريم- فرانسيسكو (الولايات المتحدة)</div>
+
+
+                <div class="mt-3">
+                    <audio controls style="max-width:100%; max-height:100%; margin:auto; object-fit:contain;">
+                        <source src="https://edge.mixlr.com/channel/liqju" type="audio/mp3" download>
+                        عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                        .
+                    </audio>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+        </div>
+    </div>
+
+    
+    <footer style="display:flex; flex-direction:column; align-items:center;" class="bg-info mt-5">
+
+        <div class="text-white h6 mt-3 text-center p-2" style="font-family:amiri;">.. تم برمجة الموقع صدقة لوجه الله تعالى الرجاء الدعاء للمسلمين جميعًا </div>
+        <div class="text-white h5 mt-3 ml-2" style="font-family:amiri;">
+
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-facebook  mr-3"></i></a>|
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-whatsapp mr-3 ml-3"></i></a>|
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-instagram mr-3 ml-3"></i></a>|
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-twitter mr-3 ml-3"></i></a>
+
+        </div>
+
+        <div class="text-white h6 mt-3" style="font-family:amiri;">
+            .
+            (<a href="https://wa.me/message/IG5E4ICWRMZYD1" class="text-white"><i class="fa-solid fa-phone" ></i></a>)
+
+            بواسطة : أَحْمَدْ خَالِدْ اَلدَّاخِلِيِّ
+            </div>
+        <div class="text-white h6 mt-3 mb-3 p-1 text-center" style="font-family:amiri;">جميع الحقوق محفوظة لإدارة الموقع &copy; 2022</div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="main.js"></script>
+</body>
+
+</html>

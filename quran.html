@@ -1,0 +1,3189 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <title>القرآن الكريم | مكتوبًا ومسموعًا </title>
+    <link rel="shortcut icon" type="image/x-icon" href="./photo/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://kit.fontawesome.com/2b6685be60.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lateef&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mirza&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    /* General : */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    @media(min-width:0px) and (max-width:315px) {
+        .test {
+            color: palevioletred;
+        }
+
+        /* header */
+        .navbar-brand {
+            font-size: 20px !important;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+        .navbar a {
+            margin-right: 5% !important;
+        }
+
+
+
+        /* Homepage container : */
+
+        .mostread {
+            font-size: 20px !important;
+        }
+
+        .info {
+            justify-content: center !important;
+            flex-direction: column !important;
+        }
+
+        .info-text {
+            margin-top: 15% !important;
+        }
+
+
+        #sbha1 {
+            margin-bottom: 10% !important;
+        }
+
+        .smaller {
+            font-size: 20px;
+        }
+
+
+        .smaller2 {
+            font-size: 13px;
+        }
+
+        .quran {
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+
+
+
+
+    }
+
+    .test {
+        color: blue;
+    }
+
+
+    @media(min-width:0px) and (max-width:766px) {
+        .test {
+            color: red;
+        }
+
+        /* header */
+
+        .navbar-brand svg {
+            margin-left: 5% !important;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+
+        /* Homepage container : */
+
+    }
+
+
+    @media(max-width:500px) {
+        .test {
+            color: yellow;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+        /* Homepage container : */
+
+        #sbha1 {
+            margin-bottom: 10% !important;
+        }
+
+        #sbha2 {
+            margin-bottom: 10% !important;
+        }
+
+
+        #sbha4 {
+            margin-bottom: 10% !important;
+        }
+
+        #sbha5 {
+            margin-bottom: 10% !important;
+        }
+
+
+
+    }
+
+
+    @media(min-width:501px) and (max-width:767px) {
+        .test {
+            color: blue;
+        }
+
+
+        /* header */
+
+        .navbar-brand {
+            margin-right: 0 !important;
+        }
+
+        .navbar-nav {
+            margin-top: 5%;
+        }
+
+        .navbar img {
+            margin-top: 0 auto !important;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+
+    }
+
+
+    @media(min-width:768px) and (max-width:991px) {
+        .test {
+            color: yellow;
+        }
+
+
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20%;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+
+        /* Homepage Conrtainer : */
+
+
+
+    }
+
+
+    @media(min-width:992px) and (max-width:1199px) {
+        .test {
+            color: green;
+        }
+
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20% !important;
+        }
+
+
+
+        /* Homepage Conrtainer : */
+
+
+
+    }
+
+
+    @media(min-width:1200px) {
+        .test {
+            color: red;
+        }
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20% !important;
+        }
+
+        /* Homepage Conrtainer : */
+
+
+
+
+
+    }
+
+    .navbar a {
+        margin-right: 5% !important;
+    }
+
+    .nav-item {
+        margin-top: 1.5%;
+        margin-right: 3%;
+    }
+
+    .nav-item {
+        margin-right: 8%;
+        transition: 0.5s;
+    }
+
+
+    .navbar a:hover {
+        color: orange !important;
+        transition: 0.8s;
+
+    }
+
+
+    .card {
+        border: none;
+        margin-bottom: 2%;
+    }
+
+    .card-header {
+        border: 2px orange solid;
+        border-bottom: 0.75px orange solid;
+        background: #fff !important;
+    }
+
+    .audio {
+        margin: 0 auto;
+    }
+
+    .footer-icon:hover {
+        color: orange;
+        transform: scale(2);
+        transition: 0.5s;
+    }
+
+</style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+
+
+    <nav class="navbar navbar-expand-md mb-5 text-danger bg-info">
+        <button style="background:transparent;" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <i class="fa-solid fa-bars text-white computer"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+
+
+                <li class="nav-item" style="font-size: 20px; font-family:mirza;">
+                    <b><a class="nav-link  text-white" href="contact.html" style="font-size: 20px;"
+                            style="font-family:Mirza;">تواصل</a></b>
+
+                </li>
+
+
+                <li class="nav-item dropdown" style="font-size: 20px; font-family:mirza;">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                        خدماتنا
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item p-3 mr-4 text-right" href="quran.html" style="font-family:Mirza;"><i
+                                class="fa-solid fa-volume-high mr-2 mt-2 float-left"></i>القران الكريم مسموع</a>
+                        <a class="dropdown-item p-3 mr-4  text-right" href="#" style="font-family:Amiri;"><i
+                                class="fas fa-quran mr-2 float-left"></i>تفسير القرآن</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="#" style="font-family:Amiri;"><i
+                                class="fa-solid fa-mosque float-left"></i> اختبارات دينية</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="lesson.html" style="font-family:Amiri;"><i
+                                class="fa-solid fa-book float-left"></i> محاضرات دينية</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="sbha.html" style="font-family:Amiri;"><i
+                                class="fa-solid fa-rotate float-left"></i> خاتم تسبيح</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item" style="font-size: 20px; font-family:mirza;">
+                    <b><a class="nav-link text-white" href="index.html" style="font-size: 20px;"
+                            style="font-family:Mirza;">الرئيسية</a></b>
+
+                </li>
+
+
+
+
+
+            </ul>
+        </div>
+        <a class="navbar-brand text-white font-weight-bold" href="#" style="font-size:30px;">
+            <img src="./photo/logo.jpg">
+        </a>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="h3 text-right mt-5 mb-4 mr-3 border-bottom w-auto mostread" style="font-family:Amiri,cursive;">
+            القرآن الكريم مسموعًا
+        </div>
+
+
+
+
+
+    <div class="container">
+
+
+    
+
+
+        <div id="accordion" class="mb-5">
+
+
+
+
+            <!-- surah 1 :-->
+
+            <div class="card mb-3">
+                <div class="card-header" style="border-radius:25px;">
+                    <a class="card-link" data-toggle="collapse" href="#collapse1">
+                        <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            سورة الفاتحة
+                        </div>
+                    </a>
+                </div>
+                <div id="collapse1" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="row" style="font-family:amiri;">
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد آيات اَلسُّورَةِ
+                                :
+                                7
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                سورة مكية <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد كلمات السورة
+                                :
+                                6144
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+
+
+                            <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                .
+                                عدد حروف السورة
+                                :
+                                25613
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+
+
+
+                            <!--   agmi 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                <i class="fa-solid fa-circle-play ml-3"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/agmi/agmi1.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4 mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="./quranmp3/agmi/Infection (Tuberculosis).mp3" download class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   afasi : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/afasi/afasi1.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/afasi/afasi1.mp3" download="afasi1.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   dosari 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/dos/dos1.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/dos/dos1.mp3" download="dos1.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- surah 2 :-->
+
+            <div class="card  mb-3">
+                <div class="card-header" style="border-radius:25px;">
+                    <a class="card-link" data-toggle="collapse" href="#collapse2">
+                        <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            سورة البقرة
+                        </div>
+                    </a>
+                </div>
+                <div id="collapse2" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="row" style="font-family:amiri;">
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد آيات اَلسُّورَةِ
+                                :
+                                286
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                سورة: مدنية <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+                            
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد كلمات السورة
+                                :
+                                6144
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+                            <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                .
+                                عدد حروف السورة
+                                :
+                                25613
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+
+
+
+
+
+
+
+                            <!--   agmi 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                <i class="fa-solid fa-circle-play ml-3"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/agmi/agmi2.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/agmi/agmi2.mp3" download="agmi1.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   afasi : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/afasi/afasi2.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/afasi/afasi2.mp3" download="afasi1.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   dosari 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/dos/dos2.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/dos/dos2.mp3" download="dos1.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- surah 2 :-->
+
+            <div class="card mb-3">
+                <div class="card-header" style="border-radius:25px;">
+                    <a class="card-link" data-toggle="collapse" href="#collapse3">
+                        <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            سورة آل عمران
+                        </div>
+                    </a>
+                </div>
+                <div id="collapse3" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="row" style="font-family:amiri;">
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد آيات اَلسُّورَةِ
+                                :
+                                200
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                سورة: مدنية <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+                            
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد كلمات السورة
+                                :
+                                3503
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+                            <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                .
+                                عدد حروف السورة
+                                :
+                                14605
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+
+
+
+
+                            <!--   agmi 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                <i class="fa-solid fa-circle-play ml-3"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/agmi/agmi3.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/agmi/agmi3.mp3" download="agmi3.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   afasi : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/afasi/afasi3.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/afasi/afasi3.mp3" download="afasi3.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   dosari 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/dos/dos3.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/dos/dos3.mp3" download="dos3.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            
+
+            <!-- surah 4 :-->
+
+            <div class="card  mb-3">
+                <div class="card-header" style="border-radius:25px;">
+                    <a class="card-link" data-toggle="collapse" href="#collapse4">
+                        <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            سورة النساء
+                        </div>
+                    </a>
+                </div>
+                <div id="collapse4" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="row" style="font-family:amiri;">
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد آيات اَلسُّورَةِ
+                                :
+                                176
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                سورة: مدنية <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+                            
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد كلمات السورة
+                                :
+                                3712
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+                            <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                .
+                                عدد حروف السورة
+                                :
+                                15937   
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+
+
+
+
+                            <!--   agmi 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                <i class="fa-solid fa-circle-play ml-3"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/agmi/agmi4.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/agmi/agmi4.mp3" download="agmi4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   afasi : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/afasi/afasi4.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/afasi/afasi4.mp3" download="afasi4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   dosari : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/dos/dos4.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/dos/dos4.mp3" download="dos4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            
+
+            <!-- surah 5 :-->
+
+            <div class="card mb-3">
+                <div class="card-header" style="border-radius:25px;">
+                    <a class="card-link" data-toggle="collapse" href="#collapse5">
+                        <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            سورة المايدة
+                        </div>
+                    </a>
+                </div>
+                <div id="collapse5" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="row" style="font-family:amiri;">
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد آيات اَلسُّورَةِ
+                                :
+                                120
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                سورة: مدنية <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+                            
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد كلمات السورة
+                                :
+                                2837
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+                            <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                .
+                                عدد حروف السورة
+                                :
+                                11892   
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+
+
+
+
+                            <!--   agmi 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                <i class="fa-solid fa-circle-play ml-3"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/agmi/agmi5.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/agmi/agmi5.mp3" download="agmi5.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   afasi : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/afasi/afasi5.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/afasi/afasi5.mp3" download="afasi5.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   dosari : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/dos/dos5.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/dos/dos5.mp3" download="dos5.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+            
+            
+
+            <!-- surah 6 :-->
+
+            <div class="card mb-3">
+                <div class="card-header" style="border-radius:25px;">
+                    <a class="card-link" data-toggle="collapse" href="#collapse6">
+                        <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            سورة الأنعام
+                        </div>
+                    </a>
+                </div>
+                <div id="collapse6" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="row" style="font-family:amiri;">
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد آيات اَلسُّورَةِ
+                                :
+                                165
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                سورة: مكية <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+                            
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد كلمات السورة
+                                :
+                                3055
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+                            <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                .
+                                عدد حروف السورة
+                                :
+                                12418   
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+
+
+
+
+                            <!--   agmi 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                <i class="fa-solid fa-circle-play ml-3"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/agmi/agmi6.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/agmi/agmi6.mp3" download="agmi4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   afasi : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/afsi/afasi6.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/afasi/afasi6.mp3" download="afasi4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   dosari : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/dos/dos6.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/dos/dos6.mp3" download="dos4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            
+            
+
+            <!-- surah 7 :-->
+
+            <div class="card mb-3">
+                <div class="card-header" style="border-radius:25px;">
+                    <a class="card-link" data-toggle="collapse" href="#collapse7">
+                        <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            سورة الأعراف
+                        </div>
+                    </a>
+                </div>
+                <div id="collapse7" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="row" style="font-family:amiri;">
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد آيات اَلسُّورَةِ
+                                :
+                                206
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                سورة: مكية <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+                            
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد كلمات السورة
+                                :
+                                3344
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+                            <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                .
+                                عدد حروف السورة
+                                :
+                                14071   
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+
+
+
+
+                            <!--   agmi 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                <i class="fa-solid fa-circle-play ml-3"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/agmi/agmi7.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/agmi/agmi7.mp3" download="agmi7.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   afasi : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/afasi/afasi7.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/afasi/afasi7.mp3" download="afasi7.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   dosari : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/dos/dos7.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/dos/dos7.mp3" download="dos7.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+                        
+            
+
+            <!-- surah 8 :-->
+
+            <div class="card mb-3">
+                <div class="card-header" style="border-radius:25px;">
+                    <a class="card-link" data-toggle="collapse" href="#collapse8">
+                        <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            سورة الأنفال
+                        </div>
+                    </a>
+                </div>
+                <div id="collapse8" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="row" style="font-family:amiri;">
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد آيات اَلسُّورَةِ
+                                :
+                                75
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                سورة: مدنية <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+                            
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد كلمات السورة
+                                :
+                                1243
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+                            <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                .
+                                عدد حروف السورة
+                                :
+                                5299   
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+
+
+
+
+                            <!--   agmi 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                <i class="fa-solid fa-circle-play ml-3"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/agmi/agmi8.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/agmi/agmi8.mp3" download="agmi8.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   afasi : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/afasi/afasi8.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/afasi/afasi8.mp3" download="afasi8.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   dosari : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/dos/dos8.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/dos/dos8.mp3" download="dos8.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+            
+            
+
+            <!-- surah 9 :-->
+
+            <div class="card mb-3">
+                <div class="card-header" style="border-radius:25px;">
+                    <a class="card-link" data-toggle="collapse" href="#collapse9">
+                        <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            سورة التوبة
+                        </div>
+                    </a>
+                </div>
+                <div id="collapse9" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="row" style="font-family:amiri;">
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد آيات اَلسُّورَةِ
+                                :
+                                113
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                سورة: مدنية <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+                            
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد كلمات السورة
+                                :
+                                2506
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+                            <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                .
+                                عدد حروف السورة
+                                :
+                                10873   
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+
+
+
+
+                            <!--   agmi 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                <i class="fa-solid fa-circle-play ml-3"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/agmi/agmi9.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/agmi/agmi9.mp3" download="agmi9.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   afasi : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/afasi/afasi9.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/afasi/afasi9.mp3" download="afasi9.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   dosari : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/dos/dos9.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/dos/dos9.mp3" download="dos9.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+                        
+            
+
+            <!-- surah 10 :-->
+
+            <div class="card mb-3">
+                <div class="card-header" style="border-radius:25px;">
+                    <a class="card-link" data-toggle="collapse" href="#collapse10">
+                        <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            سورة يونس
+                        </div>
+                    </a>
+                </div>
+                <div id="collapse10" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="row" style="font-family:amiri;">
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد آيات اَلسُّورَةِ
+                                :
+                                109
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                سورة: مكية <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+                            
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد كلمات السورة
+                                :
+                                1841
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+                            <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                .
+                                عدد حروف السورة
+                                :
+                                7425   
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+
+
+
+
+                            <!--   agmi 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                <i class="fa-solid fa-circle-play ml-3"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/agmi/agmi10.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/agmi/agmi10.mp3" download="agmi4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   afasi : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/afasi/afasi10.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/afasi/afasi10.mp3" download="afasi4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   dosari : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/dos/dos10.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/dos/dos10.mp3" download="dos4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+            
+            
+
+            <!-- surah 11 :-->
+
+            <div class="card mb-3">
+                <div class="card-header" style="border-radius:25px;">
+                    <a class="card-link" data-toggle="collapse" href="#collapse11">
+                        <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            سورة هود
+                        </div>
+                    </a>
+                </div>
+                <div id="collapse11" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="row" style="font-family:amiri;">
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد آيات اَلسُّورَةِ
+                                :
+                                123
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                سورة: مكية <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+                            
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد كلمات السورة
+                                :
+                                1947
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+                            <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                .
+                                عدد حروف السورة
+                                :
+                                7633   
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+
+
+
+
+                            <!--   agmi 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                <i class="fa-solid fa-circle-play ml-3"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/agmi/agmi11.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/agmi/agmi11.mp3" download="agmi11.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   afasi : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/afasi/afasi11.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/afasi/afasi11.mp3" download="afasi11.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   dosari : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="dos11.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/dos/dos11.mp3" download="dos11.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+            
+            
+
+            <!-- surah 12 :-->
+
+            <div class="card mb-3">
+                <div class="card-header" style="border-radius:25px;">
+                    <a class="card-link" data-toggle="collapse" href="#collapse12">
+                        <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            سورة يوسف
+                        </div>
+                    </a>
+                </div>
+                <div id="collapse12" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="row" style="font-family:amiri;">
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد آيات اَلسُّورَةِ
+                                :
+                                111
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                سورة: مكية <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+                            
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد كلمات السورة
+                                :
+                                1795
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+                            <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                .
+                                عدد حروف السورة
+                                :
+                                7125   
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+
+
+
+
+                            <!--   agmi 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                <i class="fa-solid fa-circle-play ml-3"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/agmi/agmi12.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/agmi/agmi12.mp3" download="agmi12.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   afasi : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/afasi/afasi12.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/afasi/afasi12.mp3" download="afasi12.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   dosari : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/dos/dos12.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/dos/dos12.mp3" download="dos12.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+
+            <!-- surah 13 :-->
+
+            <div class="card mb-3">
+                <div class="card-header" style="border-radius:25px;">
+                    <a class="card-link" data-toggle="collapse" href="#collapse13">
+                        <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            سورة الأنعام
+                        </div>
+                    </a>
+                </div>
+                <div id="collapse13" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="row" style="font-family:amiri;">
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد آيات اَلسُّورَةِ
+                                :
+                                43
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                سورة: مدنية <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+                            
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد كلمات السورة
+                                :
+                                854
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+                            <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                .
+                                عدد حروف السورة
+                                :
+                                3450   
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+
+
+
+
+                            <!--   agmi 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                <i class="fa-solid fa-circle-play ml-3"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/agmi/agmi13.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/agmi/agmi13.mp3" download="agmi4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   afasi : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/afasi/afasi13.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/afasi/afasi13.mp3" download="afasi4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   dosari : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/dos/dos13.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/dos/dos13.mp3" download="dos4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <!-- surah 14 :-->
+
+            <div class="card mb-3">
+                <div class="card-header" style="border-radius:25px;">
+                    <a class="card-link" data-toggle="collapse" href="#collapse14">
+                        <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            سورة الأنعام
+                        </div>
+                    </a>
+                </div>
+                <div id="collapse14" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="row" style="font-family:amiri;">
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد آيات اَلسُّورَةِ
+                                :
+                                52
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                سورة: مدنية <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+                            
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                .
+                                عدد كلمات السورة
+                                :
+                                831
+                                
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+                            </div>
+
+                            <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                .
+                                عدد حروف السورة
+                                :
+                                3461   
+                                <i class="fa-solid fa-angles-left ml-3"> </i>
+
+                            </div>
+
+
+
+
+
+
+                            <!--   agmi 1: -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                <i class="fa-solid fa-circle-play ml-3"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/agmi/agmi14.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/agmi/agmi14.mp3" download="agmi4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   afasi : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/afasi/afasi14.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/afasi/afasi14.mp3" download="afasi4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                            <!--   dosari : -->
+
+
+                            <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                :
+                                اَلِاسْتِمَاع بصوت
+                                <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                <i class="fa-solid fa-circle-play ml-1"> </i>
+
+                            </div>
+
+                            <audio controls class="audio" class="audio">
+                                <source src="quranmp3/dos/dos14.mp3" type="audio/mpeg" download>
+                                عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                .
+                            </audio>
+
+                            <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+
+                                <a href="quranmp3/dos/dos14.mp3" download="dos4.mp3" class="mt-3 ml-2">
+                                    تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                <i class="fa-solid fa-download mt-4 ml-3"> </i>
+
+                            </div>
+
+                            <hr
+                                style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+                        <!-- surah 15 :-->
+
+                        <div class="card mb-3">
+                            <div class="card-header" style="border-radius:25px;">
+                                <a class="card-link" data-toggle="collapse" href="#collapse15">
+                                    <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                                        <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                                        سورة الحجر
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="collapse15" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+            
+            
+                                    <div class="row" style="font-family:amiri;">
+            
+                                        <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                            .
+                                            عدد آيات اَلسُّورَةِ
+                                            :
+                                            99
+                                            <i class="fa-solid fa-angles-left ml-3"> </i>
+            
+                                        </div>
+            
+            
+                                        <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                            .
+                                            سورة: مكية <i class="fa-solid fa-angles-left ml-3"> </i>
+            
+                                        </div>
+            
+                                        
+            
+                                        <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                            .
+                                            عدد كلمات السورة
+                                            :
+                                            658
+                                            
+                                            <i class="fa-solid fa-angles-left ml-3"> </i>
+                                        </div>
+            
+                                        <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                            .
+                                            عدد حروف السورة
+                                            :
+                                            2797   
+                                            <i class="fa-solid fa-angles-left ml-3"> </i>
+            
+                                        </div>
+            
+            
+            
+            
+            
+            
+                                        <!--   agmi 1: -->
+            
+            
+                                        <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                            :
+                                            اَلِاسْتِمَاع بصوت
+                                            <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                            <i class="fa-solid fa-circle-play ml-3"> </i>
+            
+                                        </div>
+            
+                                        <audio controls class="audio" class="audio">
+                                            <source src="quranmp3/agmi/agmi15.mp3" type="audio/mpeg" download>
+                                            عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                            .
+                                        </audio>
+            
+                                        <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+            
+                                            <a href="quranmp3/agmi/agmi15.mp3" download="agmi4.mp3" class="mt-3 ml-2">
+                                                تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                            <i class="fa-solid fa-download mt-4 ml-3"> </i>
+            
+                                        </div>
+            
+                                        <hr
+                                            style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+            
+            
+            
+            
+            
+                                        <!--   afasi : -->
+            
+            
+                                        <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                            :
+                                            اَلِاسْتِمَاع بصوت
+                                            <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                            <i class="fa-solid fa-circle-play ml-1"> </i>
+            
+                                        </div>
+            
+                                        <audio controls class="audio" class="audio">
+                                            <source src="quranmp3/afasi/afasi15.mp3" type="audio/mpeg" download>
+                                            عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                            .
+                                        </audio>
+            
+                                        <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+            
+                                            <a href="quranmp3/afasi/afasi15.mp3" download="afasi4.mp3" class="mt-3 ml-2">
+                                                تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                            <i class="fa-solid fa-download mt-4 ml-3"> </i>
+            
+                                        </div>
+            
+                                        <hr
+                                            style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+            
+            
+            
+            
+            
+                                        <!--   dosari : -->
+            
+            
+                                        <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                            :
+                                            اَلِاسْتِمَاع بصوت
+                                            <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                            <i class="fa-solid fa-circle-play ml-1"> </i>
+            
+                                        </div>
+            
+                                        <audio controls class="audio" class="audio">
+                                            <source src="quranmp3/dos/dos15.mp3" type="audio/mpeg" download>
+                                            عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                            .
+                                        </audio>
+            
+                                        <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+            
+                                            <a href="quranmp3/dos/dos15.mp3" download="dos4.mp3" class="mt-3 ml-2">
+                                                تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                            <i class="fa-solid fa-download mt-4 ml-3"> </i>
+            
+                                        </div>
+            
+                                        <hr
+                                            style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+            
+            
+            
+            
+            
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+            
+                        </div>
+            
+            
+            
+            
+            
+            
+            
+                        <!-- surah 16 :-->
+
+                        <div class="card mb-3">
+                            <div class="card-header" style="border-radius:25px;">
+                                <a class="card-link" data-toggle="collapse" href="#collapse16">
+                                    <div class="h4 text-right qaree text-info mt-2 smaller" style="font-family:Lalezar;">
+                                        <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                                        سورة الأنعام
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="collapse16" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+            
+            
+                                    <div class="row" style="font-family:amiri;">
+            
+                                        <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                            .
+                                            عدد آيات اَلسُّورَةِ
+                                            :
+                                            128
+                                            <i class="fa-solid fa-angles-left ml-3"> </i>
+            
+                                        </div>
+            
+            
+                                        <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                            .
+                                            سورة: مكية <i class="fa-solid fa-angles-left ml-3"> </i>
+            
+                                        </div>
+            
+                                        
+            
+                                        <div class="col-11 text-right mx-auto mb-4 font-weight-bold">
+                                            .
+                                            عدد كلمات السورة
+                                            :
+                                            1845
+                                            
+                                            <i class="fa-solid fa-angles-left ml-3"> </i>
+                                        </div>
+            
+                                        <div class="col-11 text-right mx-auto mb-5 font-weight-bold">
+                                            .
+                                            عدد حروف السورة
+                                            :
+                                            7642   
+                                            <i class="fa-solid fa-angles-left ml-3"> </i>
+            
+                                        </div>
+            
+            
+            
+            
+            
+            
+                                        <!--   agmi 1: -->
+            
+            
+                                        <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                            :
+                                            اَلِاسْتِمَاع بصوت
+                                            <span style="color:orange;"> أَحْمَدْ اَلْعَجَمِيّ </span>
+                                            <i class="fa-solid fa-circle-play ml-3"> </i>
+            
+                                        </div>
+            
+                                        <audio controls class="audio" class="audio">
+                                            <source src="quranmp3/agmi/agmi16.mp3" type="audio/mpeg" download>
+                                            عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                            .
+                                        </audio>
+            
+                                        <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+            
+                                            <a href="quranmp3/agmi/agmi16.mp3" download="agmi4.mp3" class="mt-3 ml-2">
+                                                تحميل اَلسُّورَةِ بصوت اَلْعَجَمِيّ </a>
+                                            <i class="fa-solid fa-download mt-4 ml-3"> </i>
+            
+                                        </div>
+            
+                                        <hr
+                                            style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+            
+            
+            
+            
+            
+                                        <!--   afasi : -->
+            
+            
+                                        <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                            :
+                                            اَلِاسْتِمَاع بصوت
+                                            <span style="color:orange;"> مَشَارِي اَلْعَفَاسِي </span>
+                                            <i class="fa-solid fa-circle-play ml-1"> </i>
+            
+                                        </div>
+            
+                                        <audio controls class="audio" class="audio">
+                                            <source src="quranmp3/afasi/afasi16.mp3" type="audio/mpeg" download>
+                                            عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                            .
+                                        </audio>
+            
+                                        <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+            
+                                            <a href="quranmp3/afasi/afasi16.mp3" download="afasi4.mp3" class="mt-3 ml-2">
+                                                تحميل اَلسُّورَةِ بصوت اَلْعَفَاسِي </a>
+                                            <i class="fa-solid fa-download mt-4 ml-3"> </i>
+            
+                                        </div>
+            
+                                        <hr
+                                            style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+            
+            
+            
+            
+            
+                                        <!--   dosari : -->
+            
+            
+                                        <div class="col-11 text-right mx-auto mb-4 font-weight-bold smaller2" id="listen">
+                                            :
+                                            اَلِاسْتِمَاع بصوت
+                                            <span style="color:orange;"> يَاسِرْ الدوسري </span>
+                                            <i class="fa-solid fa-circle-play ml-1"> </i>
+            
+                                        </div>
+            
+                                        <audio controls class="audio" class="audio">
+                                            <source src="quranmp3/dos/dos16.mp3" type="audio/mpeg" download>
+                                            عفوًا متصفحك لا يدعم تشغيل الأصوات, قم بتحديثه أو استخدم متصفح آخر
+                                            .
+                                        </audio>
+            
+                                        <div class="col-11 text-right mx-auto mb-4  mt-3 font-weight-bold smaller2" id="listen">
+            
+                                            <a href="quranmp3/dos/dos16.mp3" download="dos4.mp3" class="mt-3 ml-2">
+                                                تحميل اَلسُّورَةِ بصوت اَلْدوسري </a>
+                                            <i class="fa-solid fa-download mt-4 ml-3"> </i>
+            
+                                        </div>
+            
+                                        <hr
+                                            style="width:50%; margin:0 auto; margin-bottom:5%; margin-top:4%; background: rgba(red, green, blue, 0.9);">
+            
+            
+            
+            
+            
+                                    </div>
+                                </div>
+                            </div>
+            
+            
+            
+                        </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+        <footer style="display:flex; flex-direction:column; align-items:center;" class="bg-info mt-5">
+
+            <div class="text-white h6 mt-3" style="font-family:amiri;">.. تم برمجة الموقع صدقة لوجه الله تعالى الرجاء الدعاء للمسلمين جميعًا </div>
+            <div class="text-white h5 mt-3 ml-2" style="font-family:amiri;">
+    
+                <a href="#" class="text-white"><i class="footer-icon fa-brands fa-facebook  mr-3"></i></a>|
+                <a href="#" class="text-white"><i class="footer-icon fa-brands fa-whatsapp mr-3 ml-3"></i></a>|
+                <a href="#" class="text-white"><i class="footer-icon fa-brands fa-instagram mr-3 ml-3"></i></a>|
+                <a href="#" class="text-white"><i class="footer-icon fa-brands fa-twitter mr-3 ml-3"></i></a>
+    
+            </div>
+    
+            <div class="text-white h6 mt-3" style="font-family:amiri;">
+                .
+                (<a href="https://wa.me/message/IG5E4ICWRMZYD1" class="text-white"><i class="fa-solid fa-phone" ></i></a>)
+    
+                بواسطة : أَحْمَدْ خَالِدْ اَلدَّاخِلِيِّ
+                </div>
+            <div class="text-white h6 mt-3 mb-3" style="font-family:amiri;">جميع الحقوق محفوظة لإدارة الموقع &copy; 2022</div>
+    
+    
+        </footer>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="main.js"></script>
+</body>
+
+</html>

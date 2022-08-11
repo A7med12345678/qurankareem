@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <title>القرآن الكريم | السبحة الإلكترونية </title>
+    <link rel="shortcut icon" type="image/x-icon" href="./photo/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://kit.fontawesome.com/2b6685be60.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lateef&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mirza&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    /* General : */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    @media(min-width:0px) and (max-width:315px) {
+        .test {
+            color: palevioletred;
+        }
+
+        /* header */
+        .navbar-brand {
+            font-size: 20px !important;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+        .navbar a {
+            margin-right: 5% !important;
+        }
+
+
+
+        /* Homepage container : */
+
+        .mostread {
+            font-size: 20px !important;
+        }
+
+        .info {
+            justify-content: center !important;
+            flex-direction: column !important;
+        }
+
+        .info-text {
+            margin-top: 15% !important;
+        }
+
+
+        #sbha1 {
+            margin-bottom: 10% !important;
+        }
+
+        .smaller {
+            font-size: 23px;
+        }
+
+
+        .smaller2 {
+            font-size: 13px;
+        }
+
+
+
+
+
+    }
+
+    .test {
+        color: blue;
+    }
+
+
+    @media(min-width:0px) and (max-width:766px) {
+        .test {
+            color: red;
+        }
+
+        /* header */
+
+        .navbar-brand svg {
+            margin-left: 5% !important;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+
+        /* Homepage container : */
+
+    }
+
+
+    @media(max-width:500px) {
+        .test {
+            color: yellow;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+        /* Homepage container : */
+
+        #sbha1 {
+            margin-bottom: 10% !important;
+        }
+
+        #sbha2 {
+            margin-bottom: 10% !important;
+        }
+
+
+        #sbha4 {
+            margin-bottom: 10% !important;
+        }
+
+        #sbha5 {
+            margin-bottom: 10% !important;
+        }
+
+
+
+    }
+
+
+    @media(min-width:501px) and (max-width:767px) {
+        .test {
+            color: blue;
+        }
+
+
+        /* header */
+
+        .navbar-brand {
+            margin-right: 0 !important;
+        }
+
+        .navbar-nav {
+            margin-top: 5%;
+        }
+
+        .navbar img {
+            margin-top: 0 auto !important;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+
+    }
+
+
+    @media(min-width:768px) and (max-width:991px) {
+        .test {
+            color: yellow;
+        }
+
+
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20%;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+
+        /* Homepage Conrtainer : */
+
+
+
+    }
+
+
+    @media(min-width:992px) and (max-width:1199px) {
+        .test {
+            color: green;
+        }
+
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20% !important;
+        }
+
+
+
+        /* Homepage Conrtainer : */
+
+
+
+    }
+
+
+    @media(min-width:1200px) {
+        .test {
+            color: red;
+        }
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20% !important;
+        }
+
+        /* Homepage Conrtainer : */
+
+
+
+
+
+    }
+
+    .navbar a {
+        margin-right: 5% !important;
+    }
+
+    .nav-item {
+        margin-top: 1.5%;
+        margin-right: 3%;
+    }
+
+    .nav-item {
+        margin-right: 8%;
+        transition: 0.5s;
+    }
+
+
+    .navbar a:hover {
+        color: orange !important;
+        transition: 0.8s;
+
+    }
+
+    .circle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-text {
+        font-size: 20px !important
+    }
+
+    ::-webkit-input-placeholder {
+        text-align: right;
+        font-family: amiri;
+    }
+
+    .sdqa-btn:hover {
+        border: 1px orange solid !important;
+        background: #fff !important;
+        color: orange !important;
+        transition: 0.5s;
+    }
+
+
+
+    .footer-icon:hover {
+        color: orange;
+        transform: scale(2);
+        transition: 0.5s;
+    }
+
+
+</style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+
+
+    <nav class="navbar navbar-expand-md mb-5 text-danger bg-info">
+        <button style="background:transparent;" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <i class="fa-solid fa-bars text-white computer"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+
+
+                <li class="nav-item" style="font-size: 20px; font-family:mirza;">
+                    <b><a class="nav-link  text-white" href="contact.html" style="font-size: 20px;"
+                            style="font-family:Mirza;">تواصل</a></b>
+
+                </li>
+
+
+                <li class="nav-item dropdown" style="font-size: 20px; font-family:mirza;">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                        خدماتنا
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item p-3 mr-4 text-right" href="#" style="font-family:Mirza;"><i
+                                class="fa-solid fa-volume-high mr-2 mt-2 float-left"></i>القران الكريم مسموع</a>
+                        <a class="dropdown-item p-3 mr-4  text-right" href="#" style="font-family:Amiri;"><i
+                                class="fas fa-quran mr-2 float-left"></i>تفسير القرآن</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="#" style="font-family:Amiri;"><i
+                                class="fa-solid fa-mosque float-left"></i> اختبارات دينية</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="#" style="font-family:Amiri;"><i
+                                class="fa-solid fa-book float-left"></i> محاضرات دينية</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="sbha.html" style="font-family:Amiri;"><i
+                                class="fa-solid fa-rotate float-left"></i> خاتم تسبيح</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item" style="font-size: 20px; font-family:mirza;">
+                    <b><a class="nav-link text-white" href="index.html" style="font-size: 20px;"
+                            style="font-family:Mirza;">الرئيسية</a></b>
+
+                </li>
+
+
+
+
+
+            </ul>
+        </div>
+        <a class="navbar-brand text-white font-weight-bold" href="#" style="font-size:30px;">
+            <img src="./photo/logo.jpg">
+        </a>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="h3 text-center mb-5" style="font-family:Mirza; margin-bottom: 10%;">صدقة جارية باسم <br>
+        dddd
+        <br>
+        الرجاء الدعاء لنا وله/ا ولجميع المسلمين أحياء منهم وأموات
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="h3 text-right mt-5 mb-4 mr-3 border-bottom w-auto mostread" style="font-family:Amiri,cursive;">
+            اَلسُّبْحَة اَلْإِلِكْتِرُونِيَّةِ
+        </div>
+
+        <div class="row">
+
+
+
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-5 col-9 mx-auto mb-2 border-0  bg-danger rounded-circle"
+                id="sbha1">
+
+                <div class="circle" style=" width:100%; border-radius: 90px; cursor: pointer;"
+                    class=" bg-warning text-center rounded-circle">
+
+                    <div class="text-center mt-5"><button onclick="start()" style="background:transparent;"
+                            class="border-0">
+                            <p class=" text-center h2 text-white  smaller" id="st1"> اُنْقُرْ هُنَا لِلْبَدْءِ </p>
+                        </button></div>
+                </div>
+                <p class="text-center smaller2"> سُبْحَانَ اَللَّهِ وَالْحَمْدِ لِلَّهِ وَلَا إِلَهَ إِلَّا اَللَّهُ
+                    وَاَللَّهُ
+                <div class="text-center">
+                    <p id="show" class="h2"></p>
+                </div>
+
+                </p>
+
+                <div class="text-center mb-4"><button onclick="stop1()" class="btn btn-info disabled"
+                        id="sto1">تَصْفِيرُ
+                        اَلْعَدَّادِ</button></div>
+
+
+            </div>
+
+
+
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-5 col-9 mx-auto mb-2 border-0  bg-danger rounded-circle"
+                id="sbha2">
+
+                <div class="circle" style=" width:100%; border-radius: 90px; cursor: pointer;"
+                    class=" bg-warning text-center rounded-circle">
+
+                    <div class="text-center mt-5"><button onclick="start2()" style="background:transparent;"
+                            class="border-0">
+                            <p class=" text-center h2 text-white  smaller" id="st2"> اُنْقُرْ هُنَا لِلْبَدْءِ </p>
+                        </button></div>
+                </div>
+                <p class="text-center smaller2"> اَسْتِتِغْفَرْ اَللَّهُ اَلْعَظِيمُ وَأَتُوبُ إِلَيْهِ
+                <div class="text-center">
+                    <p id="show2" class="h2"></p>
+                </div>
+
+                </p>
+
+                <div class="text-center mb-4"><button onclick="stop2()" class="btn btn-info disabled"
+                        id="sto2">تَصْفِيرُ
+                        اَلْعَدَّادِ</button></div>
+
+
+            </div>
+
+
+
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-5 col-9 mx-auto mb-2 border-0  bg-danger rounded-circle"
+                id="sbha3">
+
+                <div class="circle" style=" width:100%; border-radius: 90px; cursor: pointer;"
+                    class="bg-danger text-center rounded-circle">
+
+                    <div class="text-center"><button onclick="start3()" style="background:transparent;"
+                            class="border-0">
+                            <p class=" pt-5 text-center h2 text-white smaller" id="st3"> اُنْقُرْ هُنَا لِلْبَدْءِ </p>
+                        </button></div>
+                </div>
+                <p class="text-center smaller2">. . اَللَّهُمَّ صِلْ عَلَى مُحَمَّدْ وَعَلَى آلَ مُحَمَّدْ </p>
+                <div class="text-center">
+                    <p id="show3" class="h2"></p>
+                </div>
+
+                <div class="text-center mb-4"><button onclick="stop3()" class="btn btn-info disabled"
+                        id="sto3">تَصْفِيرُ
+                        اَلْعَدَّادِ</button></div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="container" style="margin-top:5%;">
+
+        <div class="row">
+
+
+
+
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-5 mr-sm-2 mx-auto col-9 mx-auto mb-2 border-0 bg-danger rounded-circle "
+                id="sbha4">
+
+                <div class="circle" style=" border-radius: 90px; cursor: pointer;" class=" text-center rounded-circle">
+
+                    <div class="text-center">
+                        <button onclick="start4()" style="background:transparent;" class="border-0 mt-5">
+                            <p class="text-center h2 text-white smaller" id="st4"> اُنْقُرْ هُنَا لِلْبَدْءِ </p>
+
+                        </button>
+                    </div>
+
+                </div>
+                <p class="text-center smaller2"> سُبْحَانَ اَللَّهِ وَالْحَمْدِ لِلَّهِ وَلَا إِلَهَ إِلَّا اَللَّهُ
+                    وَاَللَّهُ
+                    أَكْبَرُ
+                <div class="text-center">
+                    <p id="show4" class="h2"></p>
+                </div>
+
+                </p>
+
+                <div class="text-center  mb-4"><button onclick="stop4()" class="btn btn-info disabled"
+                        id="sto4">تَصْفِيرُ
+                        اَلْعَدَّادِ</button></div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-5 col-9 mx-auto mb-2 border-0  bg-danger rounded-circle"
+                id="sbha5">
+
+                <div class="circle" style=" width:100%; border-radius: 90px; cursor: pointer;"
+                    class=" bg-warning text-center rounded-circle">
+
+                    <div class="text-center"><button onclick="start5()" style="background:transparent;"
+                            class="border-0">
+                            <p class=" pt-5 text-center h2 text-white smaller" id="st5"> اُنْقُرْ هُنَا لِلْبَدْءِ </p>
+                        </button></div>
+                </div>
+                <p class="text-center smaller2"> لَا إِلَهَ إِلَّا اَللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ لَهُ اَلْمَلِكُ
+                    وَلَهُ
+                    اَلْحَمْدُ
+                <div class="text-center">
+                    <p id="show5" class="h2"></p>
+                </div>
+
+                </p>
+
+                <div class="text-center mb-4"><button onclick="stop5()" class="btn btn-info disabled"
+                        id="sto5">تَصْفِيرُ
+                        اَلْعَدَّادِ</button></div>
+
+
+            </div>
+
+
+
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-5 col-9 mx-auto mb-2 border-0  bg-danger rounded-circle"
+                id="sbha6">
+
+                <div class="circle" style=" width:100%; border-radius: 90px; cursor: pointer;"
+                    class="bg-danger text-center rounded-circle">
+
+                    <div class="text-center"><button onclick="start6()" style="background:transparent;"
+                            class="border-0">
+                            <p class=" pt-5 text-center h2 text-white smaller" id="st6"> اُنْقُرْ هُنَا لِلْبَدْءِ </p>
+                        </button></div>
+                </div>
+                <p class="text-center smaller2"> يَا حَيٌّ يَا قَيُّومْ أُصْلِحَ لِي شَأْنِي كُلَّهُ وَلَا تَكِلُنِي
+                    إِلَى
+                    نَفْسِي طَرْفَةَ عَيْنٍ </p>
+                <div class="text-center">
+                    <p id="show6" class="h2"></p>
+                </div>
+
+                <div class="text-center mb-4"><button onclick="stop6()" class="btn btn-info disabled"
+                        id="sto6">تَصْفِيرُ
+                        اَلْعَدَّادِ</button></div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr style="margin-top: 10%; margin-bottom: 6%;">
+
+
+
+
+
+    <div class="container">
+        <div class="h3 text-right mt-5 mb-4 mr-3 border-bottom w-auto mostread" style="font-family:Amiri,cursive;">
+            أَذْكَارٌ مُتَنَوِّعَةٌ
+        </div>
+
+
+        <div id="accordion mr-3 ml-3">
+
+            <div class="card  text-right">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        أَذْكَارُ اَلصَّبَاحِ
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum..
+                    </div>
+                </div>
+            </div>
+
+            <div class="card  text-right">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        أَذْكَارُ اَلْمَسَاءِ
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum..
+                    </div>
+                </div>
+            </div>
+
+            <div class="card text-right">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        ذِكْرٌ يُقَالُ عِنْدَ اَلضِّيقِ
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        اللهم إني أعوذ بك من الهم والحزن، والعجز، والكسل، والبخل، والجبن،وأعوذ بك من غلبة الدين، وقهر
+                        الرجال.
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card text-right">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapsefour">
+                        أَذْكَارٌ بَعْدَ اَلصَّلَاةِ اَلْمَفْرُوضَةِ
+                    </a>
+                </div>
+                <div id="collapsefour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum..
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <footer style="display:flex; flex-direction:column; align-items:center;" class="bg-info mt-5">
+
+        <div class="text-white h6 mt-3" style="font-family:amiri;">.. تم برمجة الموقع صدقة لوجه الله تعالى الرجاء الدعاء للمسلمين جميعًا </div>
+        <div class="text-white h5 mt-3 ml-2" style="font-family:amiri;">
+
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-facebook  mr-3"></i></a>|
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-whatsapp mr-3 ml-3"></i></a>|
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-instagram mr-3 ml-3"></i></a>|
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-twitter mr-3 ml-3"></i></a>
+
+        </div>
+
+        <div class="text-white h6 mt-3" style="font-family:amiri;">
+            .
+            (<a href="https://wa.me/message/IG5E4ICWRMZYD1" class="text-white"><i class="fa-solid fa-phone" ></i></a>)
+
+            بواسطة : أَحْمَدْ خَالِدْ اَلدَّاخِلِيِّ
+            </div>
+        <div class="text-white h6 mt-3 mb-3" style="font-family:amiri;">جميع الحقوق محفوظة لإدارة الموقع &copy; 2022</div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

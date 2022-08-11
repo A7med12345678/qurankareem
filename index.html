@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <title>القرآن الكريم | الرئيسية</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./photo/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://kit.fontawesome.com/2b6685be60.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lateef&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mirza&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    /* General : */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    @media(min-width:0px) and (max-width:315px) {
+        .test {
+            color: palevioletred;
+        }
+
+        /* header */
+        .navbar-brand {
+            font-size: 20px !important;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+        .navbar a {
+            margin-right: 5% !important;
+        }
+
+
+
+        /* Homepage container : */
+
+        .flex {
+            flex-direction: column-reverse !important;
+            border: 1px orange solid !important;
+
+        }
+
+        .flex-photo {
+            margin-top: 10%;
+        }
+
+
+        #quran {
+            text-align: center !important;
+            font-size: 26px !important;
+            padding-top: 35% !important;
+        }
+
+        #doaa {
+            text-align: center !important;
+            font-size: smaller;
+            font-weight: bold;
+        }
+
+        .btnn {
+            flex-direction: column !important;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btnn .btn-q {
+            margin-bottom: 5% !important;
+        }
+
+        #estam32 {
+            margin-right: 13% !important;
+        }
+
+
+        .media {
+            display: none !important;
+        }
+
+        .qaree {
+            font-size: 17px !important;
+        }
+
+        .mostread {
+            font-size: 20px !important;
+        }
+
+        .but {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #now {
+            margin-top: 6% !important;
+            margin-bottom: 10% !important;
+        }
+
+        .dens {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+
+
+
+
+
+    }
+
+    .test {
+        color: blue;
+    }
+
+
+    @media(min-width:0px) and (max-width:766px) {
+        .test {
+            color: red;
+        }
+
+        /* header */
+
+        .navbar-brand svg {
+            margin-left: 5% !important;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+
+        /* Homepage container : */
+
+        .flex {
+            flex-direction: column-reverse !important;
+            border: 1px orange solid !important;
+
+        }
+
+        .flex-photo {
+            margin-top: 10%;
+        }
+
+
+        #quran {
+            text-align: center !important;
+            font-size: 26px !important;
+            padding-top: 25% !important;
+        }
+
+        #doaa {
+            text-align: center !important;
+            font-size: smaller;
+            font-weight: bold;
+        }
+
+        .media {
+            display: none !important;
+        }
+
+
+
+
+
+    }
+
+
+    @media(max-width:500px) {
+        .test {
+            color: yellow;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+        /* Homepage container : */
+
+        .flex {
+            flex-direction: column-reverse !important;
+            border: none;
+        }
+
+        .flex-photo {
+            margin-top: 16% !important;
+            width: 80% !important;
+        }
+
+
+        #estam3 {
+            margin-right: 15% !important;
+        }
+
+
+        .media {
+            display: none !important;
+        }
+
+
+
+
+
+    }
+
+
+    @media(min-width:501px) and (max-width:767px) {
+        .test {
+            color: blue;
+        }
+
+
+        /* header */
+
+        .navbar-brand {
+            margin-right: 0 !important;
+        }
+
+        .navbar-nav {
+            margin-top: 5%;
+        }
+
+        .navbar img {
+            margin-top: 0 auto !important;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+
+        /* Homepage container : */
+
+        .flex {
+            flex-direction: column-reverse !important;
+            border: none;
+        }
+
+        .flex-photo {
+            margin-top: 15%;
+            width: 90% !important;
+            align-items: center;
+        }
+
+        #estam3 {
+            margin-right: 15% !important;
+        }
+
+        .media {
+            display: none !important;
+        }
+
+
+
+
+    }
+
+
+    @media(min-width:768px) and (max-width:991px) {
+        .test {
+            color: yellow;
+        }
+
+
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20%;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+
+        /* Homepage Conrtainer : */
+
+        .flex-photo {
+            margin-right: 5% !important;
+        }
+
+        #estam3 {
+            margin-right: 15% !important;
+        }
+
+
+        .media {
+            display: none !important;
+        }
+
+
+
+    }
+
+
+    @media(min-width:992px) and (max-width:1199px) {
+        .test {
+            color: green;
+        }
+
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20% !important;
+        }
+
+
+
+        /* Homepage Conrtainer : */
+
+        .flex-photo {
+            margin-right: 5% !important;
+        }
+
+        #estam3 {
+            margin-right: 15% !important;
+        }
+
+
+
+
+    }
+
+
+    @media(min-width:1200px) {
+        .test {
+            color: red;
+        }
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20% !important;
+        }
+
+        /* Homepage Conrtainer : */
+
+        .flex-photo {
+            margin-right: 5% !important;
+        }
+
+        #estam3 {
+            margin-right: 15% !important;
+        }
+
+
+
+
+    }
+
+    .navbar a {
+        margin-right: 5% !important;
+    }
+
+    .nav-item {
+        margin-top: 1.5%;
+        margin-right: 3%;
+    }
+
+    .nav-item {
+        margin-right: 8%;
+        transition: 0.5s;
+    }
+
+
+    .navbar a:hover {
+        color: orange !important;
+        transition: 0.8s;
+
+    }
+
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 3px rgba(255, 165, 0, 0.8) solid;
+        border-left: 3px rgba(255, 165, 0, 0.8) solid;
+        border-radius: 50px;
+    }
+
+
+    .btn-q:hover {
+        background: #fff !important;
+        color: orange;
+        border: 1px orange solid !important;
+        transition: 0.75s;
+    }
+
+    .media:hover {
+        transform: scale(1.2);
+        transition: 0.75s;
+        border-radius: 15px;
+    }
+
+
+    .audio {
+        border: 2px orange solid;
+        border-radius: 50px;
+        width: 100%;
+    }
+
+    .audio:hover {
+        box-shadow: 5px 5px orange;
+        transform: scale(1.02);
+        transition: 1s;
+    }
+
+    .but {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #now {
+        margin-left: 5% !important;
+    }
+
+    .btn-card:hover {
+        border: 2px orange solid;
+        background: #fff;
+        color: orange;
+        transform: rotate(360deg);
+        transition: 0.5s;
+        font-weight: bold;
+    }
+
+    .card:hover {
+        transform: scale(1.15);
+        transition: 0.5s;
+    }
+
+    .footer-icon:hover {
+        color: orange;
+        transform: scale(2);
+        transition: 0.5s;
+    }
+</style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+
+
+    <nav class="navbar navbar-expand-md mb-1 text-danger bg-info">
+        <button style="background:transparent;" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <i class="fa-solid fa-bars text-white computer"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+
+
+
+                <li class="nav-item" style="font-size: 20px; font-family:mirza;">
+                    <b><a class="nav-link  text-white" href="contact.html" style="font-size: 20px;"
+                            style="font-family:Mirza;">تواصل</a></b>
+
+                </li>
+
+
+                <li class="nav-item dropdown" style="font-size: 20px; font-family:mirza;">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                        خدماتنا
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item p-3 mr-4 text-right" href="quran.html" style="font-family:Mirza;"><i
+                                class="fa-solid fa-volume-high mr-2 mt-2 float-left"></i>القران الكريم مسموع</a>
+                        <a class="dropdown-item p-3 mr-4  text-right disabled" href="#" style="font-family:Amiri;" ><i
+                                class="fas fa-quran mr-2 float-left"></i>تفسير القرآن</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="#" style="font-family:Amiri;"><i
+                                class="fa-solid fa-mosque float-left"></i> اختبارات دينية</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="lesson.html" style="font-family:Amiri;"><i
+                                class="fa-solid fa-book float-left"></i> محاضرات دينية</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="sbha.html" style="font-family:Amiri;"><i
+                                class="fa-solid fa-rotate float-left"></i> خاتم تسبيح</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item" style="font-size: 20px; font-family:mirza;">
+                    <b><a class="nav-link text-white" href="index.html" style="font-size: 20px;"
+                            style="font-family:Mirza;">الرئيسية</a></b>
+
+                </li>
+
+
+
+
+
+
+            </ul>
+        </div>
+        <a class="navbar-brand text-white font-weight-bold" href="#" style="font-size:30px;">
+            <img src="./photo/logo.jpg">
+        </a>
+
+    </nav>
+
+
+    <marquee direction="right" width="100%" scrollamount="9" class="p-2 bg-info text-white"
+        style="margin-bottom:3%; font-family:Amiri;">
+        .. لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنْ اَلظَّالِمِينَ
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        .. اَللَّهُمَّ صِلْ عَلَى مُحَمَّدْ وَعَلَى آلَ مُحَمَّدْ كَمَا صُلِّيَتْ عَلَى اَبْرَايِهْمْ وَعَلَى اَلْ
+        إِبْرَاهِيمْ فِي اَلْعَالَمَيْنِ إِنَّكَ حَمِيدْ مَجِيدْ
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        .. سُبْحَانَ اَللَّهِ وَالْحَمْدِ لِلَّهِ وَلَا إِلَهَ إِلَّا اَللَّهُ وَاَللَّهُ أَكْبَرُ
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        اِسْتَغْفِرْ اَللَّهَ اَلْعَظِيمَ وَأَتُوبُ إِلَيْهِ
+    </marquee>
+
+
+
+    <div class="container">
+        <div class="flex pb-5 mt-3">
+
+
+
+            <div class="flex-photo" style="width:40%; display: flex; justify-content: center; align-items: center;">
+
+                <img src="./photo/iqraa.png" style="width:100%;">
+
+            </div>
+
+
+
+            <div class="flex-text w-50" style="display:flex; flex-direction:column; align-items:center;">
+
+
+                <p class="text-right h2" id="quran" style="font-family:Lalezar;"> القرآن الكريم </p>
+
+                <p class="text-right h6 pt-3 text-center font-weight-bold"
+                    style="font-family:Amiri,cursive; color:orange;">
+                    قال تعالى
+                    <br>
+                    <br>
+                    {قُلْ إِنَّ رَبِّي يَبْسُطُ الرِّزْقَ لِمَنْ يَشَاءُ مِنْ عِبَادِهِ وَيَقْدِرُ لَهُ وَمَا
+                    أَنْفَقْتُمْ مِنْ شَيْءٍ فَهُوَ يُخْلِفُهُ وَهُوَ خَيْرُ الرَّازِقِينَ}
+                    <br>
+                </p>
+
+                <p class="text-left">
+                    سبأ - آية 39
+                </p>
+
+
+                <p class="text-center h5 pt-3" style="font-family:Lateef,cursive; font-size:23px;"> صدقة جارية لجميع
+                    أموات المسلمين, نوفر جميع روايات القران الكريم بجميع
+                    قراءاته عوضًا عن أذكار المسلم اليومية</p>
+                <p class="text-right h5 mt-3" id="doaa">(لا تنسونا من صالح دعاءكم) </p>
+
+                <div class="btnn mt-3" style="display:flex;  justify-content:space-between; align-items:center;">
+                    <a class="btn btn-q btn-primary border-0" style="background:orange;" id="estam3" href="quran.html"> استمع
+                        الآن</a>
+                    <a class="btn btn-q btn-primary border-0" style="background:orange;" id="estam32" href="radio.html"> إذاعة القران
+                        الكريم</a>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="container mt-1">
+
+
+        <div class="h3 text-right mt-5 mb-4 mr-3 border-bottom w-auto mostread" style="font-family:Amiri,cursive;">
+            اَلسُّور
+            اَلْأَكْثَرِ اِسْتِمَاعًا
+        </div>
+
+
+
+
+        <div id="accordion">
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        <div class="h4 text-right qaree" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">5</span>
+                            أَحْمَدْ اَلْعَجَمِيّ
+                        </div>
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="surah">
+
+                            <p class="h4 text-right mb-3 font-weight-bold  mt-2" style="font-family:Lateef,cursive;"> :
+                                سورة
+                                الكهف </p>
+
+
+                            <audio controls class="audio" download>
+                                <source src="horse.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+
+
+                            <div class="but text-center">
+                                <button class="btn btn-info"> تَحْمِيلُ اَلسُّورَةِ</button>
+                                <button class="btn" style="border:1px orange solid; color:orange;" id="now">
+                                    اَلِاسْتِمَاعُ لِبَاقِي اَلسُّورِ</button>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="surah mt-3">
+
+                            <p class="h4 text-right mb-3 font-weight-bold mt-4" style="font-family:Lateef,cursive;"> :
+                                سورة
+                                الكافرون </p>
+
+
+                            <audio controls class="audio" download>
+                                <source src="horse.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+
+
+                            <div class="but text-center">
+                                <button class="btn btn-info"> تَحْمِيلُ اَلسُّورَةِ</button>
+                                <button class="btn" style="border:1px orange solid; color:orange;" id="now">
+                                    اَلِاسْتِمَاعُ لِبَاقِي اَلسُّورِ</button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="surah">
+
+                            <p class="h4 text-right mb-3 font-weight-bold  mt-4" style="font-family:Lateef,cursive;"> :
+                                سورة
+                                المؤمنون </p>
+
+
+                            <audio controls class="audio" download>
+                                <source src="horse.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+
+
+                            <div class="but text-center">
+                                <button class="btn btn-info"> تَحْمِيلُ اَلسُّورَةِ</button>
+                                <button class="btn" style="border:1px orange solid; color:orange;" id="now">
+                                    اَلِاسْتِمَاعُ لِبَاقِي اَلسُّورِ</button>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div id="accordion">
+
+
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                        <div class="h4 text-right qaree" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">2</span>
+                            مَشَارِي رَاشِدِ اَلْعَفَاسِي
+                        </div>
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="surah">
+
+                            <p class="h4 text-right mb-3 font-weight-bold  mt-2" style="font-family:Lateef,cursive;"> :
+                                سورة
+                                الكهف </p>
+
+
+                            <audio controls class="audio" download>
+                                <source src="horse.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+
+
+                            <div class="but text-center">
+                                <button class="btn btn-info"> تَحْمِيلُ اَلسُّورَةِ</button>
+                                <button class="btn" style="border:1px orange solid; color:orange;" id="now">
+                                    اَلِاسْتِمَاعُ لِبَاقِي اَلسُّورِ</button>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="surah mt-3">
+
+                            <p class="h4 text-right mb-3 font-weight-bold mt-4" style="font-family:Lateef,cursive;"> :
+                                سورة
+                                الكافرون </p>
+
+
+                            <audio controls class="audio" download>
+                                <source src="horse.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+
+
+                            <div class="but text-center">
+                                <button class="btn btn-info"> تَحْمِيلُ اَلسُّورَةِ</button>
+                                <button class="btn" style="border:1px orange solid; color:orange;" id="now">
+                                    اَلِاسْتِمَاعُ لِبَاقِي اَلسُّورِ</button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="surah">
+
+                            <p class="h4 text-right mb-3 font-weight-bold  mt-4" style="font-family:Lateef,cursive;"> :
+                                سورة
+                                المؤمنون </p>
+
+
+                            <audio controls class="audio" download>
+                                <source src="horse.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+
+
+                            <div class="but text-center">
+                                <button class="btn btn-info"> تَحْمِيلُ اَلسُّورَةِ</button>
+                                <button class="btn" style="border:1px orange solid; color:orange;" id="now">
+                                    اَلِاسْتِمَاعُ لِبَاقِي اَلسُّورِ</button>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="accordion">
+
+
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                        <div class="h4 text-right qaree" style="font-family:Lalezar;">
+                            <span class="badge badge-primary badge-pill float-left font-weight-normal">3</span>
+                            إِسْلَامُ صُبْحِي
+                        </div>
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+
+                        <div class="surah">
+
+                            <p class="h4 text-right mb-3 font-weight-bold  mt-2" style="font-family:Lateef,cursive;"> :
+                                سورة
+                                الكهف </p>
+
+
+                            <audio controls class="audio" download>
+                                <source src="horse.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+
+
+                            <div class="but text-center">
+                                <button class="btn btn-info"> تَحْمِيلُ اَلسُّورَةِ</button>
+                                <button class="btn" style="border:1px orange solid; color:orange;" id="now">
+                                    اَلِاسْتِمَاعُ لِبَاقِي اَلسُّورِ</button>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="surah mt-3">
+
+                            <p class="h4 text-right mb-3 font-weight-bold mt-4" style="font-family:Lateef,cursive;"> :
+                                سورة
+                                الكافرون </p>
+
+
+                            <audio controls class="audio" download>
+                                <source src="horse.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+
+
+                            <div class="but text-center">
+                                <button class="btn btn-info"> تَحْمِيلُ اَلسُّورَةِ</button>
+                                <button class="btn" style="border:1px orange solid; color:orange;" id="now">
+                                    اَلِاسْتِمَاعُ لِبَاقِي اَلسُّورِ</button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="surah">
+
+                            <p class="h4 text-right mb-3 font-weight-bold  mt-4" style="font-family:Lateef,cursive;"> :
+                                سورة
+                                المؤمنون </p>
+
+
+                            <audio controls class="audio" download>
+                                <source src="horse.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+
+
+                            <div class="but text-center">
+                                <button class="btn btn-info"> تَحْمِيلُ اَلسُّورَةِ</button>
+                                <button class="btn" style="border:1px orange solid; color:orange;" id="now">
+                                    اَلِاسْتِمَاعُ لِبَاقِي اَلسُّورِ</button>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <button class="btn btn-warning mt-3">
+            <a href="quran.html" class="text-white text-decoration-none font-weight-bold"> اَلِاسْتِمَاع لِبَقِيَّةِ
+                اَلسُّورِ</a>
+        </button>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="container">
+
+        <div class="h3 text-right mt-5 mr-3 mb-3 border-bottom w-auto mostread" style="font-family:Amiri,cursive;">
+            مُحَاضَرَات دِينِيَّةٍ
+        </div>
+
+        <div class="dens row">
+
+
+            <div class="card col-xl-3 col-lg-3 col-md-3  col-sm-6 col-7 p-0 ml-xl-2 ml-lg-2 ml-md-2 mb-sm-3 mb-5 mx-auto "
+                style="border-radius:30px;">
+                <img class="card-img-top" src="./photo/amir.jpg" alt="Card image cap" style="width:100%; padding:0;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">اَلشَّيْخ أَمِيرَ مُنِيرْ</h5>
+                    <p class="card-text text-center font-weight-bold mt-5 mb-5"
+                        style="font-family:Amiri; font-size: smaller;">
+                        .دَاعِيَةً مِصْرِيٍّ , يُقَال عَنْهُ أَنَّهُ دَخَلَ لِحَفْلَةِ غِنَاءٍ لِأَحَدِ اَلْمُطْرِبِينَ
+                        . . فَخَرَجَ ب عِشْرِينَ تَائِبًا</p>
+                    <div class="text-center"><a href="#" class="btn btn-primary text-center btn-card">الانتقال
+                            للمحاضرات</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card col-xl-3 col-lg-3 col-md-3  col-sm-6 col-7 p-0 ml-xl-2 ml-lg-2 ml-md-2 mb-sm-3 mb-5 mx-auto "
+                style="border-radius:30px;">
+                <img class="card-img-top" src="./photo/moh.jpg" alt="Card image cap" style="width:100%; padding:0;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">د / حَازِم شُومَانْ</h5>
+                    <p class="card-text text-center font-weight-bold mt-5 mb-5"
+                        style="font-family:Amiri; font-size: smaller;">
+                        هَلْ لَكَ صُحْبَةُ تَقَرُّبِكَ وَبِسُرْعَةِ إِلَى اَلْجَنَّةِ ؟ . . مَنْطِقِيًّا لَوْ عِشْتُ
+                        وَحْدُكَ بِغَيْرِ صُحْبَةٍ سَتَكُونُ ضَعِيفًا , تُهَدَّمكَ اَلْفِتَن سَرِيعًا , وَسَتَجِدُ
+                        قَلْبَكَ شَرِيدًا لَا يَجِدُ مَأْوًى لَهُ , وَيَتَخَطَّفَ مِنْ مَكَانٍ . .
+                    </p>
+                    <div class="text-center"><a href="#" class="btn btn-primary text-center btn-card">الانتقال
+                            للمحاضرات</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card col-xl-3 col-lg-3 col-md-3  col-sm-6 col-7 p-0  mb-sm-3 mb-3 ml-xl-2 ml-lg-2 ml-md-2 mx-auto"
+                style="border-radius:30px;">
+                <img class="card-img-top" src="./photo/hazem.jpg" alt="Card image cap" style="width:100%; padding:0;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">د / حَازِم شُومَانْ</h5>
+                    <p class="card-text text-center font-weight-bold mt-5 mb-5"
+                        style="font-family:Amiri; font-size: smaller;">
+                        .دَاعِيَةً مِصْرِيٍّ , يُقَال عَنْهُ أَنَّهُ دَخَلَ لِحَفْلَةِ غِنَاءٍ لِأَحَدِ اَلْمُطْرِبِينَ
+                        . . فَخَرَجَ ب عِشْرِينَ تَائِبًا</p>
+                    <div class="text-center"><a href="#" class="btn btn-primary text-center btn-card">الانتقال
+                            للمحاضرات</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-xl-3 col-lg-3 col-md-3  col-sm-6 col-7 p-0  mb-sm-3 mb-3 mt-3 ml-xl-2 ml-lg-2 ml-md-2 mx-auto"
+                style="border-radius:30px;">
+                <img class="card-img-top" src="./photo/sha.jpg" alt="Card image cap" style="width:100%; padding:0;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">مُحَمَّدْ مُتَوَلِّيْ اَلشَّعْرَاوِي</h5>
+                    <p class="card-text text-center font-weight-bold mt-5 mb-5"
+                        style="font-family:Amiri; font-size: smaller;">
+                        .. ثَمَّ لَا يَكُونُ لَكَ مِنْهَا إِلَّا مَا قَدْ مَا كَتَبَتْهُ لَكَ
+                    </p>
+                    <div class="text-center"><a href="#" class="btn btn-primary text-center btn-card">الانتقال
+                            للمحاضرات</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card col-xl-3 col-lg-3 col-md-3  col-sm-6 col-7 p-0  mb-sm-3 mb-3 mt-3 ml-xl-2 ml-lg-2 ml-md-2 mx-auto"
+                style="border-radius:30px;">
+                <img class="card-img-top" src="./photo/osman.jpg" alt="Card image cap" style="width:100%; padding:0;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">عُثْمَانْ اَلْخَمِيسْ</h5>
+                    <p class="card-text text-center font-weight-bold  mt-5 mb-5"
+                        style="font-family:Amiri; font-size: smaller;">
+                        .دَاعِيَةً مِصْرِيٍّ , يُقَال عَنْهُ أَنَّهُ دَخَلَ لِحَفْلَةِ غِنَاءٍ لِأَحَدِ اَلْمُطْرِبِينَ
+                        . . فَخَرَجَ ب عِشْرِينَ تَائِبًا</p>
+                    <div class="text-center"><a href="#" class="btn btn-primary text-center btn-card">الانتقال
+                            للمحاضرات</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card col-xl-3 col-lg-3 col-md-3  col-sm-6 col-7 p-0  mb-sm-3 mb-3 mt-3 ml-xl-2 ml-lg-2 ml-md-2 mx-auto"
+                style="border-radius:30px;">
+                <img class="card-img-top" src="./photo/yaser.jpg" alt="Card image cap" style="width:100%; padding:0;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">يَاسِرْ مَمْدُوحْ</h5>
+                    <p class="card-text text-center font-weight-bold  mt-5 mb-5"
+                        style="font-family:Amiri; font-size: smaller;">
+                        .دَاعِيَةً مِصْرِيٍّ , يُقَال عَنْهُ أَنَّهُ دَخَلَ لِحَفْلَةِ غِنَاءٍ لِأَحَدِ اَلْمُطْرِبِينَ
+                        . . فَخَرَجَ ب عِشْرِينَ تَائِبًا</p>
+                    <div class="text-center"><a href="#" class="btn btn-primary text-center  btn-card">الانتقال
+                            للمحاضرات</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <button class="btn btn-danger mt-3 text-white font-weight-bold">.. مُحَاضَرَات أُخْرَى </button>
+    </div>
+
+
+
+
+    <footer style="display:flex; flex-direction:column; align-items:center;" class="bg-info mt-5">
+
+        <div class="text-white h6 mt-3" style="font-family:amiri;">.. تم برمجة الموقع صدقة لوجه الله تعالى الرجاء الدعاء للمسلمين جميعًا </div>
+        <div class="text-white h5 mt-3 ml-2" style="font-family:amiri;">
+
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-facebook  mr-3"></i></a>|
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-whatsapp mr-3 ml-3"></i></a>|
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-instagram mr-3 ml-3"></i></a>|
+            <a href="#" class="text-white"><i class="footer-icon fa-brands fa-twitter mr-3 ml-3"></i></a>
+
+        </div>
+
+        <div class="text-white h6 mt-3" style="font-family:amiri;">
+            .
+            (<a href="https://wa.me/message/IG5E4ICWRMZYD1" class="text-white"><i class="fa-solid fa-phone" ></i></a>)
+
+            بواسطة : أَحْمَدْ خَالِدْ اَلدَّاخِلِيِّ
+            </div>
+        <div class="text-white h6 mt-3 mb-3" style="font-family:amiri;">جميع الحقوق محفوظة لإدارة الموقع &copy; 2022</div>
+
+
+    </footer>
+
+
+
+
+</body>
+
+</html>

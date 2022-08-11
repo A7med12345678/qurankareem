@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <title>القرآن الكريم | دروس دِينِيَّةٍ </title>
+    <link rel="shortcut icon" type="image/x-icon" href="./photo/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://kit.fontawesome.com/2b6685be60.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lateef&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mirza&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jomhuria&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=katibeh&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    /* General : */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    @media(min-width:0px) and (max-width:315px) {
+        .test {
+            color: palevioletred;
+        }
+
+        /* header */
+        .navbar-brand {
+            font-size: 20px !important;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+        .navbar a {
+            margin-right: 5% !important;
+        }
+
+
+
+        /* Homepage container : */
+
+        .media-photo {
+            width: 140px !important;
+        }
+
+
+
+
+        .small {
+            border-bottom: 1px black solid;
+            padding: 10% !important;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+
+    }
+
+    .test {
+        color: blue;
+    }
+
+
+    @media(min-width:0px) and (max-width:766px) {
+        .test {
+            color: red;
+        }
+
+        /* header */
+
+        .navbar-brand svg {
+            margin-left: 5% !important;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+
+        /* Homepage container : */
+
+
+
+    }
+
+
+    @media(max-width:500px) {
+        .test {
+            color: yellow;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+        /* Homepage container : */
+
+        .media {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+
+        .list-group-item-action {
+            width: 150px !important;
+            text-align: center !important;
+            align-items: center !important;
+
+        }
+
+
+
+
+    }
+
+
+    @media(min-width:501px) and (max-width:767px) {
+        .test {
+            color: blue;
+        }
+
+
+        /* header */
+
+        .navbar-brand {
+            margin-right: 0 !important;
+        }
+
+        .navbar-nav {
+            margin-top: 5%;
+        }
+
+        .navbar img {
+            margin-top: 0 auto !important;
+        }
+
+        .nav-item {
+            margin: 0 auto;
+        }
+
+        .media {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+
+        .list-group-item-action {
+            width: 400px !important;
+            text-align: center !important;
+            align-items: center !important;
+
+        }
+
+        .small {
+            font-size: larger;
+        }
+
+
+
+    }
+
+
+    @media(min-width:768px) and (max-width:991px) {
+        .test {
+            color: yellow;
+        }
+
+
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20%;
+        }
+
+        .navbar img {
+            margin-top: 0 auto;
+        }
+
+
+        /* Homepage Conrtainer : */
+
+        .small {
+            font-size: larger;
+        }
+
+
+
+    }
+
+
+    @media(min-width:992px) and (max-width:1199px) {
+        .test {
+            color: green;
+        }
+
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20% !important;
+        }
+
+
+
+        /* Homepage Conrtainer : */
+
+        .small {
+            font-size: larger;
+        }
+
+
+    }
+
+
+    @media(min-width:1200px) {
+        .test {
+            color: red;
+        }
+
+        .navbar ul {
+            margin-right: 50% !important;
+            margin-left: 20% !important;
+        }
+
+        /* Homepage Conrtainer : */
+
+        .small {
+            font-size: larger;
+        }
+
+
+    }
+
+    .navbar a {
+        margin-right: 5% !important;
+    }
+
+    .nav-item {
+        margin-top: 1.5%;
+        margin-right: 3%;
+    }
+
+    .nav-item {
+        margin-right: 8%;
+        transition: 0.5s;
+    }
+
+
+    .navbar a:hover {
+        color: orange !important;
+        transition: 0.8s;
+
+    }
+
+    .small {
+        border-bottom: 1px black solid;
+        padding: 3%;
+        text-align: center;
+        border-radius: 8px;
+        font-family: amiri;
+    }
+
+
+    .footer-icon:hover {
+        color: orange;
+        transform: scale(2);
+        transition: 0.5s;
+    }
+
+
+</style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+
+
+    <nav class="navbar navbar-expand-md mb-5 text-danger bg-info">
+        <button style="background:transparent;" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <i class="fa-solid fa-bars text-white computer"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+
+
+                <li class="nav-item" style="font-size: 20px; font-family:mirza;">
+                    <b><a class="nav-link  text-white" href="contact.html" style="font-size: 20px;"
+                            style="font-family:Mirza;">تواصل</a></b>
+
+                </li>
+
+
+                <li class="nav-item dropdown" style="font-size: 20px; font-family:mirza;">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+                        خدماتنا
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item p-3 mr-4 text-right" href="quran.html" style="font-family:Mirza;"><i
+                                class="fa-solid fa-volume-high mr-2 mt-2 float-left"></i>القران الكريم مسموع</a>
+                        <a class="dropdown-item p-3 mr-4  text-right" href="#" style="font-family:Amiri;"><i
+                                class="fas fa-quran mr-2 float-left"></i>تفسير القرآن</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="quiz.html" style="font-family:Amiri;"><i
+                                class="fa-solid fa-mosque float-left"></i> اختبارات دينية</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="lesson.html" style="font-family:Amiri;"><i
+                                class="fa-solid fa-book float-left"></i> محاضرات دينية</a>
+                        <a class="dropdown-item p-3  mr-4 text-right" href="sbha.html" style="font-family:Amiri;"><i
+                                class="fa-solid fa-rotate float-left"></i> خاتم تسبيح</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item" style="font-size: 20px; font-family:mirza;">
+                    <b><a class="nav-link text-white" href="index.html" style="font-size: 20px;"
+                            style="font-family:Mirza;">الرئيسية</a></b>
+
+                </li>
+
+
+
+
+
+            </ul>
+        </div>
+        <a class="navbar-brand text-white font-weight-bold" href="#" style="font-size:30px;">
+            <img src="./photo/logo.jpg">
+        </a>
+
+    </nav>
+
+
+
+
+
+    <div class="container">
+        <div class="h3 text-right mt-5 mb-4 mr-3 border-bottom w-auto mostread" style="font-family:Amiri,cursive;">
+            مُحَاضَرَات دِينِيَّةٍ
+        </div>
+
+
+
+
+        <div class="container">
+
+            <div data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collaps"
+                        style="background:transparent; border:none;">
+                        <i class="fa-solid fa-angles-left text-white"></i>
+                    </button>
+
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse  fixed" id="collaps"
+                        style="font-family:katibeh; font-siZe: 18px;">
+                        <ul class="navbar-nav" style="width:100%;">
+                            <li class="nav-item text-center" style="width:100%;">
+                                <a class="nav-link" href="#section1" style="width:100px;">حازم شومان</a>
+                            </li>
+                            <li class="nav-item" style="width:100%;">
+                                <a class="nav-link  text-center" href="#section2" style="width:100px;">محمد الغليظ</a>
+                            </li>
+                            <li class="nav-item" style="width:100%;">
+                                <a class="nav-link text-center" href="#section3" style="width:100px;">حازم شومان</a>
+                            </li>
+                            <li class="nav-item" style="width:100%;">
+                                <a class="nav-link text-center" href="#section4" style="width:100px;">الشعراوي</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+
+
+
+                <div id="section1" class="container-fluid p-5" style="background:rgb(211, 211, 211);">
+                    <div class="media">
+                        <img src="./photo/hazem.jpg" class="rounded-circle media-photo  align-self-center mb-4">
+                        <div
+                            class="media-body text-right mt-1 text-right w-80 ml-lg-5 ml-sm-5 ml-md-5 ml-xl-5 ml-0 align-self-center">
+
+
+                            <div class="card" style="background:transparent;">
+                                <div class="card-header" style="width:100%;">
+                                    <a class="card-link" data-toggle="collapse" href="#collapseOne" style="width:100%;">
+                                        <div class="h6 text-right qaree font-weight-bold"
+                                            style="background:transparent; border-radius:8px; font-family:lateef; font-size: larger;"
+                                            style="width:100%;">
+                                            من كنوز الجزء الثلاثين
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+
+                                        <div class="small"><a href="./lesson/hazem/1-1.html"
+                                                class="text-dark text-decoration-none">المحاضرة الأولى</a>
+                                        </div>
+                                        <div class="mt-2 small"><a href="./lesson/hazem/1-2.html"
+                                                class="text-dark text-decoration-none">المحاضرة
+                                                الثانية</a></div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="card" style="background:transparent;">
+                                <div class="card-header" style="width:100%;">
+                                    <a class="card-link" data-toggle="collapse" href="#collapsetwo" style="width:100%;">
+                                        <div class="h6 text-right qaree font-weight-bold"
+                                            style="background:transparent; border-radius:8px; font-family:lateef; font-size: larger;"
+                                            style="width:100%;">
+                                            مفاتيح خزان الله
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div id="collapsetwo" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+
+                                        <div class="small"><a href="./lesson/hazem/2-1.html"
+                                                class="text-dark text-decoration-none">المحاضرة الأولى</a>
+                                        </div>
+                                        <div class="mt-2 small"><a href="./lesson/hazem/2-2.html"
+                                                class="text-dark text-decoration-none">المحاضرة
+                                                الثانية</a></div>
+                                        <div class="mt-2 small"><a href="./lesson/hazem/2-3.html"
+                                                class="text-dark text-decoration-none">المحاضرة
+                                                الثالثة</a></div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card" style="background:transparent;">
+                                <div class="card-header" style="width:100%;">
+                                    <a class="card-link" data-toggle="collapse" href="#collapsetree"
+                                        style="width:100%;">
+                                        <div class="h6 text-right qaree font-weight-bold"
+                                            style="background:transparent; border-radius:8px; font-family:lateef; font-size: larger;"
+                                            style="width:100%;">
+                                            مذبحة نيوزيلندا
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="collapsetree" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+
+                                        <div class="small"><a href="./lesson/hazem/3-1.html"
+                                                class="text-dark text-decoration-none">المحاضرة الأولى</a>
+                                        </div>
+                                        <div class="mt-2 small"><a href="./lesson/hazem/3-2.html"
+                                                class="text-dark text-decoration-none">المحاضرة
+                                                الثانية</a></div>
+                                        <div class="mt-2 small"><a href="./lesson/hazem/3-3.html"
+                                                class="text-dark text-decoration-none">المحاضرة
+                                                الثالثة</a></div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="card" style="background:transparent;">
+                                <div class="card-header" style="width:100%;">
+                                    <a class="card-link" data-toggle="collapse" href="#collapsefor" style="width:100%;">
+                                        <div class="h6 text-right qaree font-weight-bold"
+                                            style="background:transparent; border-radius:8px; font-family:lateef; font-size: larger;"
+                                            style="width:100%;">
+                                            الأقصى وهيكل سليمان
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="collapsefor" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+
+                                        <div class="small"><a href="./lesson/hazem/4-1.html"
+                                                class="text-dark text-decoration-none">المحاضرة الأولى</a>
+                                        </div>
+                                        <div class="mt-2 small"><a href="./lesson/hazem/4-2.html"
+                                                class="text-dark text-decoration-none">المحاضرة
+                                                الثانية</a></div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div id="section2" class="container-fluid p-5" style="background:rgb(255, 255, 153);">
+                    <div class="media">
+                        <img src="./photo/moh.jpg" class="rounded-circle media-photo  align-self-center  mb-4">
+                        <div
+                            class="media-body text-right mt-1 text-right w-80 ml-lg-5 ml-sm-5 ml-md-5 ml-xl-5 ml-0 align-self-center">
+
+
+                            <div class="card" style="background:transparent;">
+                                <div class="card-header" style="width:100%;">
+                                    <a class="card-link" data-toggle="collapse" href="#collapseO" style="width:100%;">
+                                        <div class="h6 text-right qaree font-weight-bold"
+                                            style="background:transparent; border-radius:8px; font-family:lateef; font-size: larger;"
+                                            style="width:100%;">
+                                            نصف الجنة
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="collapseO" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+
+                                        <div class="small"><a href="./lesson/moh/1-1.html"
+                                                class="text-dark text-decoration-none">المحاضرة الأولى</a>
+                                        </div>
+                                        <div class="small"><a href="./lesson/moh/1-2.html"
+                                                class="text-dark text-decoration-none">المحاضرة الثانية</a>
+                                        </div>
+                                        <div class="small"><a href="./lesson/moh/1-3.html"
+                                                class="text-dark text-decoration-none">المحاضرة الثالثة</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="card" style="background:transparent;">
+                                <div class="card-header" style="width:100%;">
+                                    <a class="card-link" data-toggle="collapse" href="#collapset" style="width:100%;">
+                                        <div class="h6 text-right qaree font-weight-bold"
+                                            style="background:transparent; border-radius:8px; font-family:lateef; font-size: larger;"
+                                            style="width:100%;">
+                                            منوعات
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="collapset" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+
+                                        <div class="small"><a href="./lesson/moh/2-1.html"
+                                                class="text-dark text-decoration-none">المحاضرة الأولى</a>
+                                        </div>
+                                        <div class="small"><a href="./lesson/moh/2-2.html"
+                                                class="text-dark text-decoration-none">المحاضرة الثانية</a>
+                                        </div>
+                                        <div class="small"><a href="./lesson/moh/2-3.html"
+                                                class="text-dark text-decoration-none">المحاضرة الثالثة</a>
+                                        </div>
+                                        <div class="small"><a href="./lesson/moh/2-4.html"
+                                                class="text-dark text-decoration-none">المحاضرة الرابعة</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <div id="section3" class="container-fluid p-5" style="background:rgb(108, 167, 187);">
+                    <div class="media">
+                        <img src="./photo/hazem.jpg" class="rounded-circle media-photo">
+
+                        <div
+                            class="media-body text-right mt-5 text-right w-80 mr-4 ml-lg-5 ml-sm-5 ml-md-5 ml-xl-5 ml-0">
+                            <div class="list-group w-100" style="background:transparent;">
+                                <a href="#" class="list-group-item list-group-item-action font-weight-bold"
+                                    style="background:transparent; border-radius:8px;">المحاضرة الأولى - الإيمان
+                                    بالله</a>
+                                <a href="#" class="list-group-item list-group-item-action  font-weight-bold"
+                                    style="background:transparent; border-radius:8px">المحاضرة الثانية - بر الوالدين</a>
+                                <a href="#" class="list-group-item list-group-item-action font-weight-bold"
+                                    style="background:transparent; border-radius:8px">المحاضرة الثالثة - العمل
+                                    الصالح</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="section4" class="container-fluid p-5" style="background:rgb(206, 232, 205);">
+                    <div class="media">
+                        <img src="./photo/amir.jpg" class="rounded-circle media-photo">
+
+                        <div
+                            class="media-body text-right mt-5 text-right w-80 mr-4 ml-lg-5 ml-sm-5 ml-md-5 ml-xl-5 ml-0">
+                            <div class="list-group w-100" style="background:transparent;">
+                                <a href="#"
+                                    class="list-group-item list-group-item-action font-weight-bold text-decoration-none"
+                                    style="background:transparent; border-radius:8px;">المحاضرة الأولى - الإيمان
+                                    بالله</a>
+                                <a href="#"
+                                    class="list-group-item list-group-item-action  font-weight-bold text-decoration-none"
+                                    style="background:transparent; border-radius:8px">المحاضرة الثانية - بر الوالدين</a>
+                                <a href="#"
+                                    class="list-group-item list-group-item-action font-weight-bold text-decoration-none"
+                                    style="background:transparent; border-radius:8px">المحاضرة الثالثة - العمل
+                                    الصالح</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+        <div id="accordion">
+        </div>
+
+
+
+
+
+
+        <footer style="display:flex; flex-direction:column; align-items:center;" class="bg-info mt-5">
+
+            <div class="text-white h6 mt-3" style="font-family:amiri;">.. تم برمجة الموقع صدقة لوجه الله تعالى الرجاء
+                الدعاء للمسلمين جميعًا </div>
+            <div class="text-white h5 mt-3 ml-2" style="font-family:amiri;">
+
+                <a href="#" class="text-white"><i class="footer-icon fa-brands fa-facebook  mr-3"></i></a>|
+                <a href="#" class="text-white"><i class="footer-icon fa-brands fa-whatsapp mr-3 ml-3"></i></a>|
+                <a href="#" class="text-white"><i class="footer-icon fa-brands fa-instagram mr-3 ml-3"></i></a>|
+                <a href="#" class="text-white"><i class="footer-icon fa-brands fa-twitter mr-3 ml-3"></i></a>
+
+            </div>
+
+            <div class="text-white h6 mt-3" style="font-family:amiri;">
+                .
+                (<a href="https://wa.me/message/IG5E4ICWRMZYD1" class="text-white"><i
+                        class="fa-solid fa-phone"></i></a>)
+
+                بواسطة : أَحْمَدْ خَالِدْ اَلدَّاخِلِيِّ
+            </div>
+            <div class="text-white h6 mt-3 mb-3" style="font-family:amiri;">جميع الحقوق محفوظة لإدارة الموقع &copy; 2022
+            </div>
+
+
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="main.js"></script>
+</body>
+
+</html>
